@@ -1,0 +1,19 @@
+/* Goofle font import */
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Limelight&display=swap');
+
+/* astric selector to remove default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: "Didact Gothic", sans-serif;
+}
+
+/*  Heading Styles */
+h1 {
+    font-family: "Limelight", sans-serif;
+}
