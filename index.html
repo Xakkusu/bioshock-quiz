@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- add Meta tags for search engine, description, keyword and author-->
+    <meta name="description" content="Biooshock quiz to test your knowdlege about the games">
+    <meta name="keywords" content="Bioshock, Bioshock quiz, game, quiz, online quiz, videogame, videogame quiz">
+    <meta name="author" content="N.D.">
+
     <!-- link stylesheet to HTML-file -->
-     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon.png">
+    
+    <!-- Title -->
     <title>Bioshock quiz</title>
 </head>
 <body>
@@ -14,22 +25,39 @@
             <h1 id="heading">
                 <img src="assets/images/logo.png" alt="Bioshock Logo">Bioshock Quiz
             </h1>
-
-        <!-- main -->
-        <!-- menu section -->
-        <section id="menu">   
+        
+            <!-- menu section -->
+        <section id="game-menu">   
             <!-- Enter your name Div -->
-            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <div id="container-name">
+                <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
             <!-- Start the Game Div -->
-            <div id="start-game"></div>
+            <div id="start-game">
+                <a href="quiz.html" aria-label="go to the quiz" id="quiz-link">Let's play!</a>
+            </div>
             <!-- How to play Div -->
-            <div id="how-to-play"></div>
+            <div id="how-to-play">
+                <button id="how-to-play-btn" class="btn" aria-label="Information on how to play the game">How to play</button>
+            </div>
             <!-- Leaderboard Div -->
-            <div id="leaderboard"></div>
+            <div id="leaderboard">
+                <button id="leaderboard-btn" class="btn" aria-label="Shows the leaderboard table">Leaderboard</button>
+            </div>
             <!-- More Knowdledge Div-->
-            <div id="knowledge"></div>
+            <div id="knowledge">
+                <button id="knowledge-btn" class="btn" aria-label="Shows more resources to gain knowdlege">Need more knowledge?</button>
+            </div>
         </section>
+
+        <!-- How to play selected Div -->
+        <div class="hidden" id="how-to-play-container"></div>
+        <!-- Leaderboard selected Div -->
+        <div class="hidden" id="leaderboard-container"></div>
+        <!-- Knowledge selected Div -->
+        <div class="hidden" id="knowdlege"></div>
     </section>
+
     <!-- footer -->
     <section class="footer"></section>
 
