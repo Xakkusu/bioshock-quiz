@@ -11,13 +11,42 @@
 /* General Styles */
 body {
     font-family: "Didact Gothic", sans-serif;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 /*  Heading Styles */
 h1 {
     font-family: "Limelight", sans-serif;
+    font-size: 200%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 .hidden{
     display: none;
+}
+
+.quiz-body{
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgba(210, 215, 211, 1);
+    margin: 0;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+#select-game-type h2{
+    border-bottom: 2px solid black;
 }
