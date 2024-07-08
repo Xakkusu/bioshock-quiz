@@ -34,6 +34,16 @@ a {
     text-decoration: none;
 }
 
+/* general button styling */
+.btn {
+    padding: 2px 10px;
+    width: 200px;
+    margin: 5px 0;
+    cursor: pointer; /* change to an image? */
+}
+
+/* do detailed styling, box shadow + hover-effect of buttons -> seperate effect for in-game-buttons */
+
 .hidden{
     display: none;
 }
