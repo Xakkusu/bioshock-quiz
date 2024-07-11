@@ -35,6 +35,9 @@ const next = document.getElementById("next-btn");
 let score = 0;
 // number of questions left
 let numberOfQuestions = 15;
+// number of questions asked, will serve as an index of the questions object
+let questionsAsked = 0;
+
 
 
 // content for questions and their answers
@@ -68,8 +71,23 @@ const questions = [
     }
 ];
 
+// function to set up game
+function setUp(){
+    questionsAsked = 0; // can i not just delete this, if everything works, test this
+    score = 0; //same as above --> can vllt ne extra reset function machen um das zu umgehen
+    runGame();
+}
+
 // function to start the game
 function runGame () {
+    
+    // create variable for active question being asked which will change witht the progress of the game
+    let activeQuestion = questions[questionsAsked];
+    // create variable which will add 1 to the question asked so the index will increase and next question will run after answering the active one
+    let nrQuestion =  questionsAsked + 1 ;
+
+    // will change inner html to the question with the index of questionAsked to the inner HTML of the question element
+    question.innerHTML = nrQuestion + ". " + questionsAsked.question;
 
 }
 
@@ -85,5 +103,5 @@ function questionsLeft () {
 
 // function to show timer of 20 seconds
 function runTimer () {
-    
+
 }
