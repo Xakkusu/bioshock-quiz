@@ -72,13 +72,21 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
 }
 
 #modal-how-to-play, 
-#modal-leaderboard{
+#modal-leaderboard,
+#game-content-container{
     margin: auto;
     padding: 20px;
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60%;
     background-color: blueviolet;
+}
+
+.in-game-btn {
+    width: 80%;
+    min-width: 600px;
+    text-align: left;
+    padding: 0 10px;
 }
