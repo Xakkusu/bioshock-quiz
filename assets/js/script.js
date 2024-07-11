@@ -1,18 +1,27 @@
 //adaptation of https://www.w3schools.com/howto/howto_css_modals.asp
 // Get the modal & button that opens the modal
-var modal = document.getElementById("how-to-play-container");
-var btn = document.getElementById("how-to-play-btn");
+let modal1 = document.getElementById("how-to-play-container");
+let btn1 = document.getElementById("how-to-play-btn");
+let modal2 = document.getElementById("leaderboard-container");
+let btn2 = document.getElementById("leaderboard-btn");
 // When the user clicks on the button, open the modal
 //kann ich hier nicht einfach so ähnlich wi unten machen mit if id=="" then?
-btn.onclick = function() {
-  modal.style.display = "flex";
-  modal.style.justifyContent = "center";
-  modal.style.alignItems = "center";
+btn1.onclick = function() {
+  modal1.style.display = "flex";
+  modal1.style.justifyContent = "center";
+  modal1.style.alignItems = "center";
+}
+btn2.onclick = function() {
+  modal2.style.display = "flex";
+  modal2.style.justifyContent = "center";
+  modal2.style.alignItems = "center";
 }
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  } else if (event.target == modal2) {
+    modal2.style.display = "none";
   }
 }
 
