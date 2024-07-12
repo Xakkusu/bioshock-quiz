@@ -149,12 +149,17 @@ function checkAnswer(userAnswer) {
     });
     // show next button only after answer has been submitted
     next.style.display = "block";
-
+    incrementScore (userAnswer);
 }
 
 // function to increase value of score when answering correct
-function incrementScore () {
-
+function incrementScore (userAnswer) {
+    const chosenAnswer = userAnswer.target;
+    if (chosenAnswer.dataset.correct === "true"){
+        score++;
+        console.log(score);
+    }
+    document.getElementById("container-score").innerHTML= "Score: " + score;
 }
 
 // function to decrease how many questions are left
