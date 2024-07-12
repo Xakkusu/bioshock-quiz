@@ -94,3 +94,15 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
 #next-btn{
     display: none;
 }
+
+.true-answer {
+    background-color: green;
+    color: white;
+    transition: 0.5s;
+}
+
+.false-answer {
+    background-color: red;
+    color: white;
+    transition: 0.5s;
+}
