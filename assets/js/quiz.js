@@ -138,6 +138,16 @@ function checkAnswer(userAnswer) {
         chosenAnswer.classList.add("false-answer");
     }
 
+    //player is only to chose one button
+    Array.from(answerOption.children).forEach(button => {
+        if(button.dataset.correct === "true"){
+            button.classList.add("true-answer");
+        }
+        button.disabled = true;
+    });
+    next.style.display = "block";
+    // when player chose wrong the correct answer will be highlighted as well
+
 }
 
 // function to increase value of score when answering correct
