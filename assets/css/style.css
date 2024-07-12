@@ -106,3 +106,13 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
     color: white;
     transition: 0.5s;
 }
+
+/* will only work on non disabled buttons */
+.btn:hover:not([disabled]){
+
+}
+
+/* to give visual hint that buttons are no longer selectable */
+.btn:disabled {
+    cursor: no-drop;
+}

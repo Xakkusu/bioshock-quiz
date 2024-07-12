@@ -138,15 +138,17 @@ function checkAnswer(userAnswer) {
         chosenAnswer.classList.add("false-answer");
     }
 
-    //player is only to chose one button
+    //player can only chose one button, for each button it will be checked if the dataset is true
+    // when player chose wrong the correct answer will be highlighted as well
     Array.from(answerOption.children).forEach(button => {
         if(button.dataset.correct === "true"){
             button.classList.add("true-answer");
         }
+        //after one button is clicked the other buttons will be disabled
         button.disabled = true;
     });
+    // show next button only after answer has been submitted
     next.style.display = "block";
-    // when player chose wrong the correct answer will be highlighted as well
 
 }
 
