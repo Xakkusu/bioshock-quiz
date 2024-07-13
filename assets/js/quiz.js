@@ -96,7 +96,8 @@ function runGame () {
     questionToAsk.innerHTML = nrQuestion + ". " + activeQuestion.question;
     numberOfQuestions--;
     document.getElementById("container-number-of-questions").innerHTML = "Questions left: " + numberOfQuestions;
-    
+    rebootTimer();
+    runTimer();
 
     // create new buttons for answers
     activeQuestion.answers.forEach(answer => {
@@ -120,7 +121,7 @@ function runGame () {
         button.addEventListener("click", checkAnswer)
     });
 
-    runTimer();
+    
 
 }
 
@@ -171,22 +172,22 @@ function incrementScore (userAnswer) {
     document.getElementById("container-score").innerHTML= "Score: " + score;
 }
 
-// function to show timer of 20 seconds
-function runTimer () {
-    setInterval(() => {
-        document.getElementById("seconds").innerHTML = timeToAnswer;
-        --timeToAnswer;
-        if (timeToAnswer <= 0){
-            timesUp();
-        }}
-    , 1000)
-}
-
 // function to reboot the timer for new question
 function rebootTimer (){
     // overall time to answer question
     timeToAnswer = 5;
     // time left to answer
+}   
+
+// function to show timer of 20 seconds
+function runTimer () {
+    setInterval(() => {
+        document.getElementById("seconds").innerHTML = timeToAnswer;
+        --timeToAnswer;
+        if (timeToAnswer < 0){
+            timesUp();
+        }}
+    , 1000)
 }
 
 // function to go to next question
@@ -206,7 +207,6 @@ function nextQuestion(){
                 Your score: ${score}`)
         }
     });
-    rebootTimer();
 }
 
 // function to stop timer after the time is uo
@@ -222,9 +222,8 @@ function timesUp(){
     });
     // show next button only after answer has been submitted
     next.style.display = "block";
-
+    nextQuestion();
 }
-
 //maybe to add in futue 1. restart/reset function, 
 
 setUp();
