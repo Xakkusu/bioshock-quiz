@@ -121,7 +121,19 @@ function runGame () {
         button.addEventListener("click", checkAnswer)
     });
 
-    
+    // when next button is clicked next question will be asked
+    next.addEventListener("click", ()=>{
+        // checks if there are still questions left, if there are
+        if (questionsAsked < questions.length){
+            questionsAsked++;
+            if (questionsAsked<questions.length){
+                runGame();
+            }
+        } else {
+            alert(`Congrats, you finished the quiz!
+                Your score: ${score}`)
+        }
+    });
 
 }
 
@@ -159,7 +171,6 @@ function checkAnswer(userAnswer) {
     // show next button only after answer has been submitted
     next.style.display = "block";
     incrementScore (userAnswer);
-    nextQuestion();
 }
 
 // function to increase value of score when answering correct
@@ -194,19 +205,7 @@ function runTimer () {
 // still to add, not show last ext button but rather show result & then restart the game --> setUp()?
 function nextQuestion(){
 
-    // when next button is clicked next question will be asked
-    next.addEventListener("click", ()=>{
-        // checks if there are still questions left, if there are
-        if (questionsAsked < questions.length){
-            questionsAsked++;
-            if (questionsAsked<questions.length){
-                runGame();
-            }
-        } else {
-            alert(`Congrats, you finished the quiz!
-                Your score: ${score}`)
-        }
-    });
+
 }
 
 // function to stop timer after the time is uo
@@ -222,7 +221,6 @@ function timesUp(){
     });
     // show next button only after answer has been submitted
     next.style.display = "block";
-    nextQuestion();
 }
 //maybe to add in futue 1. restart/reset function, 
 
