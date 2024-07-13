@@ -37,6 +37,8 @@ let score = 0;
 let numberOfQuestions = 15;
 // number of questions asked, will serve as an index of the questions object
 let questionsAsked = 0;
+// time to answer
+let timeToAnswer = 5;
 
 
 
@@ -89,8 +91,12 @@ function runGame () {
     // create variable which will add 1 to the question asked, when using it below for the inner HTML the question counter will start with a 1
     let nrQuestion =  questionsAsked + 1 ;
 
-    // will change inner html to the question with the index of questionAsked to the inner HTML of the question element
+
+    // will change inner html to the question with the index of questionAsked to the inner HTML of the question element & how many question are left (maybe delete the firstr?)
     questionToAsk.innerHTML = nrQuestion + ". " + activeQuestion.question;
+    numberOfQuestions--;
+    document.getElementById("container-number-of-questions").innerHTML = "Questions left: " + numberOfQuestions;
+    
 
     // create new buttons for answers
     activeQuestion.answers.forEach(answer => {
@@ -113,6 +119,8 @@ function runGame () {
         // add click effect when player choses a button
         button.addEventListener("click", checkAnswer)
     });
+
+    runTimer();
 
 }
 
@@ -163,15 +171,24 @@ function incrementScore (userAnswer) {
     document.getElementById("container-score").innerHTML= "Score: " + score;
 }
 
-// function to decrease how many questions are left
-function questionsLeft () {
-
-}
-
 // function to show timer of 20 seconds
 function runTimer () {
+    setInterval(() => {
+        document.getElementById("seconds").innerHTML = timeToAnswer;
+        --timeToAnswer;
+        if (timeToAnswer <= 0){
+            timesUp();
+        }}
+    , 1000)
+}
 
-
+// function to reboot the timer for new question
+function rebootTimer (){
+    // overall time to answer question
+    timeToAnswer = 20;
+    // time left to answer
+    countdown = 0;
+    countdown = timeToAnswer;
 }
 
 // function to go to next question
@@ -192,6 +209,21 @@ function nextQuestion(){
         }
     });
 
+}
+
+// function to stop timer after the time is uo
+function timesUp(){
+    timeToAnswer = 0;
+    document.getElementById("seconds").innerHTML = timeToAnswer;
+    Array.from(answerOption.children).forEach(button => {
+        if(button.dataset.correct === "true"){
+            button.classList.add("true-answer");
+        }
+        //after one button is clicked the other buttons will be disabled
+        button.disabled = true;
+    });
+    // show next button only after answer has been submitted
+    next.style.display = "block";
 }
 
 //maybe to add in futue 1. restart/reset function, 
