@@ -185,10 +185,8 @@ function runTimer () {
 // function to reboot the timer for new question
 function rebootTimer (){
     // overall time to answer question
-    timeToAnswer = 20;
+    timeToAnswer = 5;
     // time left to answer
-    countdown = 0;
-    countdown = timeToAnswer;
 }
 
 // function to go to next question
@@ -208,7 +206,7 @@ function nextQuestion(){
                 Your score: ${score}`)
         }
     });
-
+    rebootTimer();
 }
 
 // function to stop timer after the time is uo
@@ -224,6 +222,7 @@ function timesUp(){
     });
     // show next button only after answer has been submitted
     next.style.display = "block";
+
 }
 
 //maybe to add in futue 1. restart/reset function, 
