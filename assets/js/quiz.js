@@ -5,6 +5,7 @@ const next = document.getElementById("next-btn");
 const questionContainer = document.getElementById("container-number-of-questions");
 const containerScore = document.getElementById("container-score");
 const seconds = document.getElementById("seconds");
+const countdownBar = document.getElementById("countdown-bar");
 let modal = document.getElementById("container-game-area");
 let btn = document.getElementsByClassName("game-to-choose");
 let score = 0;
@@ -14,6 +15,8 @@ let numberOfQuestions = 15;
 let timerCounter;
 let questionsAsked = 0;
 let timeToAnswer = 20;
+let barCounter;
+let countdownBarWidth = 100;
 
 
 //adaptation of https://www.w3schools.com/howto/howto_css_modals.asp
@@ -94,7 +97,7 @@ function runGame () {
     questionToAsk.innerHTML = nrQuestion + ". " + activeQuestion.question;
     numberOfQuestions--;
     questionContainer.innerHTML = "Questions left: " + numberOfQuestions;
-
+    runCountdownBar();
     runTimer(20);
 
     // create new buttons for answers
@@ -217,6 +220,23 @@ function timesUp(){
     // show next button only after answer has been submitted
     next.style.display = "block";
 }
+
+// function to decrease countdown bar
+
+function runCountdownBar(){
+    countdownBarWidth = 100;
+    barCounter = setInterval(() => {
+        if (countdownBarWidth > 0){
+            countdownBarWidth--;
+            countdownBar.style.width = countdownBarWidth + "%";
+        }
+        
+
+    },
+    1000
+)
+}
+
 //maybe to add in futue 1. restart/reset function, 
 
 setUp();

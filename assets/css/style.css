@@ -126,6 +126,7 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
 
 #countdown-bar {
     width: 100%;
+    /*background: linear-gradient(to tomato, #e26882, #f3f3f3);*/
     background-color: #e26882;
     border: 2px solid salmon;
     border-radius: 5px;
