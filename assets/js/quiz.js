@@ -1,10 +1,23 @@
-//adaptation of https://www.w3schools.com/howto/howto_css_modals.asp
-// Get the modal & button that opens the modal
+// variables for the quiz
+const questionToAsk = document.getElementById("question");
+const answerOption = document.getElementById("answers");
+const next = document.getElementById("next-btn");
+const questionContainer = document.getElementById("container-number-of-questions");
+const containerScore = document.getElementById("container-score");
+const seconds = document.getElementById("seconds");
 let modal = document.getElementById("container-game-area");
 let btn = document.getElementsByClassName("game-to-choose");
+let score = 0;
+// number of questions left
+let numberOfQuestions = 15;
+// number of questions asked, will serve as an index of the questions object
+let timerCounter;
+let questionsAsked = 0;
+let timeToAnswer = 5;
 
 
-
+//adaptation of https://www.w3schools.com/howto/howto_css_modals.asp
+// Get the modal & button that opens the modal
 // When the user clicks on the button, open the modal
 //kann ich hier nicht einfach so ähnlich wi unten machen mit if id=="" then?
 for (let i = 0; i<btn.length; i++){
@@ -26,21 +39,6 @@ window.onclick = function(event) {
 // used https://www.youtube.com/watch?v=PBcqGxrr9g8&t=14s to get to know the basic structure
 // of how to implement content for questions
 // and load it to the website, then working on my own on it
-
-// variables for the quiz
-const questionToAsk = document.getElementById("question");
-const answerOption = document.getElementById("answers");
-const next = document.getElementById("next-btn");
-//score will be 0 at the start of the game
-let score = 0;
-// number of questions left
-let numberOfQuestions = 15;
-// number of questions asked, will serve as an index of the questions object
-let questionsAsked = 0;
-// time to answer
-let timeToAnswer = 5;
-
-
 
 // content for questions and their answers
 const questions = [
@@ -95,8 +93,8 @@ function runGame () {
     // will change inner html to the question with the index of questionAsked to the inner HTML of the question element & how many question are left (maybe delete the firstr?)
     questionToAsk.innerHTML = nrQuestion + ". " + activeQuestion.question;
     numberOfQuestions--;
-    document.getElementById("container-number-of-questions").innerHTML = "Questions left: " + numberOfQuestions;
-    rebootTimer();
+    questionContainer.innerHTML = "Questions left: " + numberOfQuestions;
+
     runTimer();
 
     // create new buttons for answers
@@ -122,11 +120,13 @@ function runGame () {
     });
 
     // when next button is clicked next question will be asked
+    // in runGame body since it went through the question wrong on its own
     next.addEventListener("click", ()=>{
         // checks if there are still questions left, if there are
         if (questionsAsked < questions.length){
             questionsAsked++;
             if (questionsAsked<questions.length){
+                rebootTimer();
                 runGame();
             }
         } else {
@@ -180,38 +180,31 @@ function incrementScore (userAnswer) {
         score++;
         console.log(score);
     }
-    document.getElementById("container-score").innerHTML= "Score: " + score;
+    containerScore.innerHTML= "Score: " + score;
 }
 
 // function to reboot the timer for new question
 function rebootTimer (){
-    // overall time to answer question
+    clearInterval(timerCounter);
     timeToAnswer = 5;
-    // time left to answer
 }   
+
 
 // function to show timer of 20 seconds
 function runTimer () {
-    setInterval(() => {
-        document.getElementById("seconds").innerHTML = timeToAnswer;
-        --timeToAnswer;
+    timerCounter = setInterval(() => {
+        seconds.innerHTML = timeToAnswer;
+        timeToAnswer--;
         if (timeToAnswer < 0){
             timesUp();
         }}
     , 1000)
 }
 
-// function to go to next question
-// still to add, not show last ext button but rather show result & then restart the game --> setUp()?
-function nextQuestion(){
-
-
-}
-
 // function to stop timer after the time is uo
 function timesUp(){
-    timeToAnswer = 0;
-    document.getElementById("seconds").innerHTML = timeToAnswer;
+    clearInterval(timerCounter);
+    seconds.innerHTML = 0;
     Array.from(answerOption.children).forEach(button => {
         if(button.dataset.correct === "true"){
             button.classList.add("true-answer");
