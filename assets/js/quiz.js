@@ -97,8 +97,8 @@ function runGame () {
     questionToAsk.innerHTML = nrQuestion + ". " + activeQuestion.question;
     numberOfQuestions--;
     questionContainer.innerHTML = "Questions left: " + numberOfQuestions;
-    runCountdownBar();
     runTimer(20);
+    runCountdownBar();
 
     // create new buttons for answers
     activeQuestion.answers.forEach(answer => {
@@ -129,8 +129,8 @@ function runGame () {
         if (questionsAsked < questions.length){
             questionsAsked++;
             if (questionsAsked<questions.length){
-                //rebootTimer();
                 clearInterval(timerCounter);
+                clearInterval(barCounter);
                 runGame();
             }
         } else {
@@ -151,7 +151,8 @@ function rebootGame() {
 
 // function to check the answer the player clicked
 function checkAnswer(userAnswer) {
-    clearInterval(timerCounter)
+    clearInterval(timerCounter);
+    clearInterval(barCounter);
     // add variables for the answer the player chose and for the correct answer option from the option's/button's data
     const chosenAnswer = userAnswer.target;
     //const correctAnswer = chosenAnswer.dataset.correct === "true";
@@ -187,13 +188,6 @@ function incrementScore (userAnswer) {
     containerScore.innerHTML= "Score: " + score;
 }
 
-// function to reboot the timer for new question
-function rebootTimer (){
-    clearInterval(timerCounter);
-    timeToAnswer = 20;
-}   
-
-
 // function to show timer of 20 seconds, set function insdie function as it won't work otherwise
 // still dont like how at the beginning it still shows the seconds before it kp
 function runTimer (timeToAnswer) {
@@ -223,17 +217,20 @@ function timesUp(){
 
 // function to decrease countdown bar
 
+// hilfe hier https://www.w3schools.com/howto/howto_js_progressbar.asp
+
 function runCountdownBar(){
     countdownBarWidth = 100;
     barCounter = setInterval(() => {
         if (countdownBarWidth > 0){
-            countdownBarWidth--;
+            --countdownBarWidth;
             countdownBar.style.width = countdownBarWidth + "%";
+        } else {
+            clearInterval(barCounter);
         }
-        
-
     },
-    1000
+    // got to 215 through testing which will act accordingly to 20 seconds
+    213
 )
 }
 
