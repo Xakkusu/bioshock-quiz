@@ -13,7 +13,7 @@ let numberOfQuestions = 15;
 // number of questions asked, will serve as an index of the questions object
 let timerCounter;
 let questionsAsked = 0;
-let timeToAnswer = 5;
+let timeToAnswer = 20;
 
 
 //adaptation of https://www.w3schools.com/howto/howto_css_modals.asp
@@ -95,7 +95,7 @@ function runGame () {
     numberOfQuestions--;
     questionContainer.innerHTML = "Questions left: " + numberOfQuestions;
 
-    runTimer();
+    runTimer(20);
 
     // create new buttons for answers
     activeQuestion.answers.forEach(answer => {
@@ -126,7 +126,8 @@ function runGame () {
         if (questionsAsked < questions.length){
             questionsAsked++;
             if (questionsAsked<questions.length){
-                rebootTimer();
+                //rebootTimer();
+                clearInterval(timerCounter);
                 runGame();
             }
         } else {
@@ -147,7 +148,7 @@ function rebootGame() {
 
 // function to check the answer the player clicked
 function checkAnswer(userAnswer) {
-    
+    clearInterval(timerCounter)
     // add variables for the answer the player chose and for the correct answer option from the option's/button's data
     const chosenAnswer = userAnswer.target;
     //const correctAnswer = chosenAnswer.dataset.correct === "true";
@@ -186,16 +187,18 @@ function incrementScore (userAnswer) {
 // function to reboot the timer for new question
 function rebootTimer (){
     clearInterval(timerCounter);
-    timeToAnswer = 5;
+    timeToAnswer = 20;
 }   
 
 
-// function to show timer of 20 seconds
-function runTimer () {
+// function to show timer of 20 seconds, set function insdie function as it won't work otherwise
+// still dont like how at the beginning it still shows the seconds before it kp
+function runTimer (timeToAnswer) {
     timerCounter = setInterval(() => {
         seconds.innerHTML = timeToAnswer;
         timeToAnswer--;
         if (timeToAnswer < 0){
+            clearInterval(timerCounter);
             timesUp();
         }}
     , 1000)
@@ -203,8 +206,7 @@ function runTimer () {
 
 // function to stop timer after the time is uo
 function timesUp(){
-    clearInterval(timerCounter);
-    seconds.innerHTML = 0;
+    seconds.innerHTML = "0";
     Array.from(answerOption.children).forEach(button => {
         if(button.dataset.correct === "true"){
             button.classList.add("true-answer");
