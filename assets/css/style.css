@@ -30,8 +30,34 @@ h1 {
     align-items: center;
 }
 
+h2 {
+    font-family: "Limelight", sans-serif;
+    font-size: 150%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 a {
     text-decoration: none;
+}
+
+table {
+    width: 80%;
+    min-width: 600px;
+}
+
+th, td {
+    border: solid 1px black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    height: 30px;
+}
+
+.nameLeaderboard {
+    width: 75%;
+    text-align: left;
+    padding: 0 10px;
 }
 
 /* general button styling */
