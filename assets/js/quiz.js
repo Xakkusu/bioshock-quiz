@@ -25,6 +25,7 @@ let countdownBarWidth = 100;
 //kann ich hier nicht einfach so ähnlich wi unten machen mit if id=="" then?
 for (let i = 0; i<btn.length; i++){
     btn[i].onclick = function() {
+    setUp();
     modal.style.display = "flex";
     modal.style.justifyContent = "center";
     modal.style.alignItems = "center";
@@ -283,7 +284,7 @@ function runCountdownBar(){
     countdownBarWidth = 100;
     barCounter = setInterval(() => {
         if (countdownBarWidth > 0){
-            --countdownBarWidth;
+            countdownBarWidth--;
             countdownBar.style.width = countdownBarWidth + "%";
         } else {
             clearInterval(barCounter);
@@ -296,4 +297,3 @@ function runCountdownBar(){
 
 //maybe to add in futue 1. restart/reset function, 
 
-setUp();
