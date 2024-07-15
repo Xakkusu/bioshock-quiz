@@ -1,3 +1,5 @@
+const namePlayer = document.getElementById("name");
+
 //adaptation of https://www.w3schools.com/howto/howto_css_modals.asp
 // Get the modal & button that opens the modal
 let modal1 = document.getElementById("how-to-play-container");
@@ -27,7 +29,12 @@ window.onclick = function(event) {
 
 //open link in new tab when clicking knowledge button
 function openLink() {
-
   window.open("https://bioshock.fandom.com/wiki/BioShock_Wiki");
-
 }
+
+// when entering the name the user will be directed to the quiz page
+namePlayer.addEventListener("keydown", function(event){
+  if (event.key === "Enter"){
+    window.location.replace("quiz.html");
+  }
+})
