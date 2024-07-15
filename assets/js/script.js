@@ -6,6 +6,7 @@ let modal1 = document.getElementById("how-to-play-container");
 let btn1 = document.getElementById("how-to-play-btn");
 let modal2 = document.getElementById("leaderboard-container");
 let btn2 = document.getElementById("leaderboard-btn");
+
 // When the user clicks on the button, open the modal
 //kann ich hier nicht einfach so ähnlich wi unten machen mit if id=="" then?
 btn1.onclick = function() {
@@ -26,6 +27,12 @@ window.onclick = function(event) {
     modal2.style.display = "none";
   }
 }
+
+// add eventlistener for saving name data into local storage
+//window.addEventListener("load", () => {
+//  const nameStorage = localStorage.getItem("NAME", nameOfPlayer);
+//  return nameStorage;
+//})
 
 //open link in new tab when clicking knowledge button
 function openLink() {
