@@ -6,6 +6,7 @@ const questionContainer = document.getElementById("container-number-of-questions
 const containerScore = document.getElementById("container-score");
 const seconds = document.getElementById("seconds");
 const countdownBar = document.getElementById("countdown-bar");
+let questions;
 let modal = document.getElementById("container-game-area");
 let btn = document.getElementsByClassName("game-to-choose");
 let score = 0;
@@ -25,10 +26,19 @@ let countdownBarWidth = 100;
 //kann ich hier nicht einfach so ähnlich wi unten machen mit if id=="" then?
 for (let i = 0; i<btn.length; i++){
     btn[i].onclick = function() {
-    setUp();
-    modal.style.display = "flex";
-    modal.style.justifyContent = "center";
-    modal.style.alignItems = "center";
+        clearInterval(timerCounter);
+        clearInterval(barCounter);
+        if (this.id === "choose-b1"){
+            questions = [...questionsB1];
+        } else if (this.id === "choose-b2"){
+            questions = [...questionsB2];
+        } else if (this.id === "choose-b3"){
+            questions = [...questionsB3];
+        };
+        setUp();
+        modal.style.display = "flex";
+        modal.style.justifyContent = "center";
+        modal.style.alignItems = "center";
     }
 }
 
@@ -45,95 +55,7 @@ window.onclick = function(event) {
 // and load it to the website, then working on my own on it
 
 // content for questions and their answers
-const questions = [
-    {
-        question : "blablabla1?",
-        answers : [
-            { text : "a", correct : false},
-            { text : "b", correct : false},
-            { text : "c", correct : true},
-            { text : "d", correct : false}
-        ]
-    },
-    {
-        question : "blablabla2?",
-        answers : [
-            { text : "a", correct : false},
-            { text : "b", correct : true},
-            { text : "c", correct : false},
-            { text : "d", correct : false}
-        ]
-    },
-    {
-        question : "blablabla3?",
-        answers : [
-            { text : "a", correct : true},
-            { text : "b", correct : false},
-            { text : "c", correct : false},
-            { text : "d", correct : false}
-        ]
-    }
-];
 
-const questionsB2 = [
-    {
-        question : "blablabla1?",
-        answers : [
-            { text : "a", correct : false},
-            { text : "b", correct : false},
-            { text : "c", correct : true},
-            { text : "d", correct : false}
-        ]
-    },
-    {
-        question : "blablabla2?",
-        answers : [
-            { text : "a", correct : false},
-            { text : "b", correct : true},
-            { text : "c", correct : false},
-            { text : "d", correct : false}
-        ]
-    },
-    {
-        question : "blablabla3?",
-        answers : [
-            { text : "a", correct : true},
-            { text : "b", correct : false},
-            { text : "c", correct : false},
-            { text : "d", correct : false}
-        ]
-    }
-];
-
-const questionsB3 = [
-    {
-        question : "blablabla1?",
-        answers : [
-            { text : "a", correct : false},
-            { text : "b", correct : false},
-            { text : "c", correct : true},
-            { text : "d", correct : false}
-        ]
-    },
-    {
-        question : "blablabla2?",
-        answers : [
-            { text : "a", correct : false},
-            { text : "b", correct : true},
-            { text : "c", correct : false},
-            { text : "d", correct : false}
-        ]
-    },
-    {
-        question : "blablabla3?",
-        answers : [
-            { text : "a", correct : true},
-            { text : "b", correct : false},
-            { text : "c", correct : false},
-            { text : "d", correct : false}
-        ]
-    }
-];
 
 // function to set up game
 function setUp(){
