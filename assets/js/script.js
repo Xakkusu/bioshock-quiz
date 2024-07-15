@@ -1,4 +1,5 @@
 const namePlayer = document.getElementById("name");
+const letsPlayBtn = document.getElementById("quiz-button");
 
 //adaptation of https://www.w3schools.com/howto/howto_css_modals.asp
 // Get the modal & button that opens the modal
@@ -42,6 +43,16 @@ function openLink() {
 // when entering the name the user will be directed to the quiz page
 namePlayer.addEventListener("keydown", function(event){
   if (event.key === "Enter"){
+    window.location.replace("quiz.html");
+  }
+})
+
+// when pressing submit go to quiz file
+letsPlayBtn.addEventListener("click", function(event){
+  event.preventDefault;
+  if (namePlayer.value === ""){
+     alert("Enter a name to start");
+  } else {
     window.location.replace("quiz.html");
   }
 })
