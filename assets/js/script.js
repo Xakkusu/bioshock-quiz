@@ -43,7 +43,11 @@ function openLink() {
 // when entering the name the user will be directed to the quiz page
 namePlayer.addEventListener("keydown", function(event){
   if (event.key === "Enter"){
-    window.location.replace("quiz.html");
+    if (namePlayer.value === ""){
+      alert("Enter a name to start");
+    } else {
+      window.location.replace("quiz.html");
+    }
   }
 })
 
