@@ -6,11 +6,14 @@ const questionContainer = document.getElementById("container-number-of-questions
 const containerScore = document.getElementById("container-score");
 const seconds = document.getElementById("seconds");
 const countdownBar = document.getElementById("countdown-bar");
+const redoGameBtn = document.getElementById("redo-game-button");
+const restartGameBtn = document.getElementById("restart-game-btn");
+const goBackToGameBtn = document.getElementById("go-back-btn");
 let endOfGameContainer = document.getElementById("end-of-game");
 let finishSentence = document.getElementById("finish-sentence");
 let modal = document.getElementById("container-game-area");
 let btn = document.getElementsByClassName("game-to-choose");
-let redoGameBtn = document.getElementById("redo-game-button")
+let restartContainer = document.getElementById("restart-game");
 let score = 0;
 let questions;
 // number of questions left
@@ -48,7 +51,20 @@ for (let i = 0; i<btn.length; i++){
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    clearInterval(timerCounter);
+    clearInterval(barCounter);
+    restartContainer.style.display = "flex";
+    restartContainer.style.justifyContent = "center";
+    restartContainer.style.alignItems = "center";
+    restartGameBtn.innerHTML = "Start New Game";
+    goBackToGameBtn.innerHTML = "Go Back To Game";
+    restartContainer.onclick = function (event) {
+        if (event.target === goBackToGameBtn) {
+            window.location.replace("quiz.html");
+        } else if (event.target === restartGameBtn) {
+            restartContainer.style.display = "none";
+        }
+    }
   } else if (event.target === redoGameBtn) {
     window.location.replace("quiz.html");
   }
