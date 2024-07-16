@@ -117,7 +117,6 @@ function runGame () {
                 runGame();
             }
         } else {
-            return score
             alert(`Congrats, you finished the quiz!
                 Your score: ${score}`)
         }

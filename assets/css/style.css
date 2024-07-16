@@ -99,8 +99,18 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
 
 #modal-how-to-play, 
 #modal-leaderboard,
-#game-content-container
-#end-of-game-container{
+#game-content-container{
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    background-color: blueviolet;
+}
+
+#end-of-game-container {
     margin: auto;
     padding: 20px;
     width: 90%;
