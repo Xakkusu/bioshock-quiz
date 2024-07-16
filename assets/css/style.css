@@ -121,6 +121,17 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
     background-color: blueviolet;
 }
 
+#restart-game-container {
+    margin: auto;
+    padding: 20px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    background-color: rgb(32, 162, 223);
+}
+
 .in-game-btn {
     width: 80%;
     min-width: 600px;
