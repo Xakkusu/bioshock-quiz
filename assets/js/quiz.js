@@ -8,10 +8,11 @@ const seconds = document.getElementById("seconds");
 const countdownBar = document.getElementById("countdown-bar");
 let endOfGameContainer = document.getElementById("end-of-game");
 let finishSentence = document.getElementById("finish-sentence");
-let questions;
 let modal = document.getElementById("container-game-area");
 let btn = document.getElementsByClassName("game-to-choose");
+let redoGameBtn = document.getElementById("redo-game-btn")
 let score = 0;
+let questions;
 // number of questions left
 let numberOfQuestions = 15;
 // number of questions asked, will serve as an index of the questions object
@@ -48,7 +49,9 @@ for (let i = 0; i<btn.length; i++){
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
-  } 
+  } else if (event.target === redoGameBtn) {
+    window.location.replace("quiz.html");
+  }
 }
 
 
