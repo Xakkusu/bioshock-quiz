@@ -10,7 +10,7 @@ let endOfGameContainer = document.getElementById("end-of-game");
 let finishSentence = document.getElementById("finish-sentence");
 let modal = document.getElementById("container-game-area");
 let btn = document.getElementsByClassName("game-to-choose");
-let redoGameBtn = document.getElementById("redo-game-btn")
+let redoGameBtn = document.getElementById("redo-game-button")
 let score = 0;
 let questions;
 // number of questions left
