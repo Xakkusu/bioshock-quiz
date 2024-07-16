@@ -66,6 +66,7 @@ window.onclick = function(event) {
 function setUp(){
     questionsAsked = 0; 
     score = 0; //same as above --> can vllt ne extra reset function machen um das zu umgehen
+    containerScore.innerHTML= "";
     runGame();
 }
 
@@ -177,7 +178,6 @@ function incrementScore (userAnswer) {
     const chosenAnswer = userAnswer.target;
     if (chosenAnswer.dataset.correct === "true"){
         score++;
-        console.log(score);
     }
     containerScore.innerHTML= "Score: " + score;
 }
