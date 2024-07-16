@@ -1,7 +1,7 @@
 const namePlayer = document.getElementById("name");
 const letsPlayBtn = document.getElementById("quiz-button");
 
-//adaptation of https://www.w3schools.com/howto/howto_css_modals.asp
+//adaptation of https://www.w3schools.com/howto/howto_css_modals.asp & https://www.youtube.com/watch?v=XH5OW46yO8I
 // Get the modal & button that opens the modal
 let modal1 = document.getElementById("how-to-play-container");
 let btn1 = document.getElementById("how-to-play-btn");
@@ -60,3 +60,4 @@ letsPlayBtn.addEventListener("click", function(event){
     window.location.replace("quiz.html");
   }
 })
+
