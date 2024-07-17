@@ -60,9 +60,9 @@ window.onclick = function(event) {
     goBackToGameBtn.innerHTML = "Go Back To Game";
     restartContainer.onclick = function (event) {
         if (event.target === goBackToGameBtn) {
-            window.location.replace("quiz.html");
-        } else if (event.target === restartGameBtn) {
             restartContainer.style.display = "none";
+        } else if (event.target === restartGameBtn) {
+            window.location.replace("quiz.html");
         }
     }
   } else if (event.target === redoGameBtn) {
