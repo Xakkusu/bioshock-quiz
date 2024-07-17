@@ -61,6 +61,11 @@ window.onclick = function(event) {
     restartContainer.onclick = function (event) {
         if (event.target === goBackToGameBtn) {
             restartContainer.style.display = "none";
+            let timeToResume = seconds.innerHTML;
+            let barToResume = countdownBar.style.width;
+            barToResume = barToResume.replace("%","");
+            runTimer(timeToResume);
+            runCountdownBar(barToResume);
         } else if (event.target === restartGameBtn) {
             window.location.replace("quiz.html");
         }
@@ -103,7 +108,7 @@ function runGame () {
     numberOfQuestions--;
     questionContainer.innerHTML = "Questions left: " + numberOfQuestions;
     runTimer(20);
-    runCountdownBar();
+    runCountdownBar(100);
 
     // create new buttons for answers
     activeQuestion.answers.forEach(answer => {
@@ -203,7 +208,7 @@ function incrementScore (userAnswer) {
 function runTimer (timeToAnswer) {
     timerCounter = setInterval(() => {
         seconds.innerHTML = timeToAnswer;
-        timeToAnswer--;
+        --timeToAnswer;
         if (timeToAnswer < 0){
             clearInterval(timerCounter);
             timesUp();
@@ -229,8 +234,7 @@ function timesUp(){
 
 // hilfe hier https://www.w3schools.com/howto/howto_js_progressbar.asp
 
-function runCountdownBar(){
-    countdownBarWidth = 100;
+function runCountdownBar(countdownBarWidth){
     barCounter = setInterval(() => {
         if (countdownBarWidth > 0){
             countdownBarWidth--;
