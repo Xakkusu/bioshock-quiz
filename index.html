@@ -34,8 +34,10 @@
         <section id="container-game-menu">
             <!-- Enter your name Div -->
             <div id="container-name">
-                <input type="text" name="name" id="name" placeholder="Enter your name to play">
-                <button type="submit" class="btn" id="quiz-button">Let's play!</button>
+                <form action="quiz.html" id="save-player-name" onsubmit="saveName()">
+                    <input type="text" name="name" id="name" placeholder="Enter your name to play" required pattern="\S(.*\S)?">
+                    <button type="submit" class="btn" id="quiz-button">Let's play!</button>
+                </form>
             </div>
             <!-- Start the Game Div 
             <div id="container-start-game">
@@ -118,29 +120,6 @@
                                     <p><span class="scorePlayer"></span></p>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="nameLeaderboard">
-                                    <p>6. <span class="namePlayer"></span></p>
-                                </td>
-                                <td class="scoreLeaderboard">
-                                    <p><span class="scorePlayer"></span></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="nameLeaderboard">
-                                    <p>7. <span class="namePlayer"></span></p>
-                                </td>
-                                <td class="scoreLeaderboard">
-                                    <p><span class="scorePlayer"></span></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="nameLeaderboard">
-                                    <p>8. <span class="namePlayer"></span></p>
-                                </td>
-                                <td class="scoreLeaderboard">
-                                    <p><span class="scorePlayer"></span></p>
-                                </td>
                         </tbody>
                     </table>
                 </div>
