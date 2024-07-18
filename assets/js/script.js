@@ -48,8 +48,8 @@ namePlayer.addEventListener("keydown", function(event){
       alert("Enter a name to start");
     } else {
       event.preventDefault();
+      localStorage.setItem("userName", namePlayer.value);
       form.submit();
-
     }
   }
 })
@@ -62,6 +62,7 @@ letsPlayBtn.addEventListener("click", function(event){
     event.preventDefault();
     localStorage.setItem("userName", namePlayer.value);
     alert(`${localStorage.getItem("userName")} lez go`)
+    form.submit();
   }
 })
 

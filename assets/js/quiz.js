@@ -149,7 +149,7 @@ function runGame () {
             endOfGameContainer.style.display = "flex";
             endOfGameContainer.style.justifyContent = "center";
             endOfGameContainer.style.alignItems = "center";
-            finishSentence.innerHTML = `Congrats,  you finished the quiz!
+            finishSentence.innerHTML = `Congrats, ${localStorage.getItem("userName")} you finished the quiz!
                 Your score: ${score}`
             //alert(`Congrats, you finished the quiz!
                 //Your score: ${score}`)
