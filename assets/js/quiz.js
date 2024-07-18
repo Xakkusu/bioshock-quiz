@@ -9,6 +9,7 @@ const countdownBar = document.getElementById("countdown-bar");
 const redoGameBtn = document.getElementById("redo-game-button");
 const restartGameBtn = document.getElementById("restart-game-btn");
 const goBackToGameBtn = document.getElementById("go-back-btn");
+const addToLeaderboardBtn =document.getElementById("add-to-leaderboard-btn");
 let endOfGameContainer = document.getElementById("end-of-game");
 let finishSentence = document.getElementById("finish-sentence");
 let modal = document.getElementById("container-game-area");
@@ -151,11 +152,13 @@ function runGame () {
             endOfGameContainer.style.alignItems = "center";
             finishSentence.innerHTML = `Congrats, ${localStorage.getItem("userName")} you finished the quiz!
                 Your score: ${score}`
-            gameFinished = true;
-            endScore = score;
-            localStorage.setItem("userScore", endScore);
-            //alert(`Congrats, you finished the quiz!
-                //Your score: ${score}`)
+            //set value pair in local storage as true when game is finished
+            localStorage.setItem("finished", true);
+            addToLeaderboardBtn.addEventListener("click", function() {
+                endScore = score;
+                localStorage.setItem("userScore", endScore);
+                window.location.replace("index.html");
+            })
         }
     });
 
