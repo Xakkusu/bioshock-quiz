@@ -9,6 +9,7 @@ const countdownBar = document.getElementById("countdown-bar");
 const redoGameBtn = document.getElementById("redo-game-button");
 const restartGameBtn = document.getElementById("restart-game-btn");
 const goBackToGameBtn = document.getElementById("go-back-btn");
+const namePlayer = localStorage.getItem("userName");
 let endOfGameContainer = document.getElementById("end-of-game");
 let finishSentence = document.getElementById("finish-sentence");
 let modal = document.getElementById("container-game-area");
@@ -63,8 +64,8 @@ window.onclick = function(event) {
             restartContainer.style.display = "none";
             let timeToResume = seconds.innerHTML;
             let barToResume = countdownBar.style.width;
-            barToResume = barToResume.replace("%","");
             runTimer(timeToResume);
+            barToResume = barToResume.replace("%","");
             runCountdownBar(barToResume);
         } else if (event.target === restartGameBtn) {
             window.location.replace("quiz.html");
@@ -148,7 +149,7 @@ function runGame () {
             endOfGameContainer.style.display = "flex";
             endOfGameContainer.style.justifyContent = "center";
             endOfGameContainer.style.alignItems = "center";
-            finishSentence.innerHTML = `Congrats, you finished the quiz!
+            finishSentence.innerHTML = `Congrats,  you finished the quiz!
                 Your score: ${score}`
             //alert(`Congrats, you finished the quiz!
                 //Your score: ${score}`)

@@ -1,6 +1,6 @@
-const namePlayer = document.getElementById("name");
+let namePlayer = document.getElementById("name-of-player");
 const letsPlayBtn = document.getElementById("quiz-button");
-
+const form = document.getElementById("save-player-name");
 
 //adaptation of https://www.w3schools.com/howto/howto_css_modals.asp & https://www.youtube.com/watch?v=XH5OW46yO8I
 // Get the modal & button that opens the modal
@@ -47,18 +47,25 @@ namePlayer.addEventListener("keydown", function(event){
     if (namePlayer.value === ""){
       alert("Enter a name to start");
     } else {
-      window.location.replace("quiz.html");
+      event.preventDefault();
+      form.submit();
+
     }
   }
 })
 
 // when pressing submit go to quiz file
 letsPlayBtn.addEventListener("click", function(event){
-  event.preventDefault;
   if (namePlayer.value === ""){
      alert("Enter a name to start");
   } else {
-    window.location.replace("quiz.html");
+    event.preventDefault();
+    localStorage.setItem("userName", namePlayer.value);
+    alert(`${localStorage.getItem("userName")} lez go`)
   }
 })
 
+// save storage locally
+function saveName() {
+  localStorage.setItem("userName", playerNameValue);
+}
