@@ -1,6 +1,8 @@
 let namePlayer = document.getElementById("name-of-player");
 const letsPlayBtn = document.getElementById("quiz-button");
 const form = document.getElementById("save-player-name");
+const leaderboardName = document.getElementsByClassName("namePlayer");
+const leaderBoardGame = document.getElementsByClassName("scorePlayer");
 
 //adaptation of https://www.w3schools.com/howto/howto_css_modals.asp & https://www.youtube.com/watch?v=XH5OW46yO8I
 // Get the modal & button that opens the modal
@@ -66,7 +68,6 @@ letsPlayBtn.addEventListener("click", function(event){
   }
 })
 
-// save storage locally
-function saveName() {
-  localStorage.setItem("userName", playerNameValue);
-}
+// add score and name to leaderboard after the game is finished
+leaderboardName[0].innerHTML = localStorage.getItem("userName");
+leaderBoardGame[0].innerHTML = localStorage.getItem("userScore");

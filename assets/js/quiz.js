@@ -9,13 +9,13 @@ const countdownBar = document.getElementById("countdown-bar");
 const redoGameBtn = document.getElementById("redo-game-button");
 const restartGameBtn = document.getElementById("restart-game-btn");
 const goBackToGameBtn = document.getElementById("go-back-btn");
-const namePlayer = localStorage.getItem("userName");
 let endOfGameContainer = document.getElementById("end-of-game");
 let finishSentence = document.getElementById("finish-sentence");
 let modal = document.getElementById("container-game-area");
 let btn = document.getElementsByClassName("game-to-choose");
 let restartContainer = document.getElementById("restart-game");
 let score = 0;
+let endScore;
 let questions;
 // number of questions left
 let numberOfQuestions = 15;
@@ -151,6 +151,9 @@ function runGame () {
             endOfGameContainer.style.alignItems = "center";
             finishSentence.innerHTML = `Congrats, ${localStorage.getItem("userName")} you finished the quiz!
                 Your score: ${score}`
+            gameFinished = true;
+            endScore = score;
+            localStorage.setItem("userScore", endScore);
             //alert(`Congrats, you finished the quiz!
                 //Your score: ${score}`)
         }
