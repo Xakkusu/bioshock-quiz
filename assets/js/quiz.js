@@ -98,7 +98,7 @@ function runGame () {
     
     // 
     rebootGame();
-
+    next.style.display = "none";
     // create variable for active question being asked which will change witht the progress of the game
     let activeQuestion = questions[questionsAsked];
     // create variable which will add 1 to the question asked, when using it below for the inner HTML the question counter will start with a 1
@@ -107,7 +107,7 @@ function runGame () {
 
     // will change inner html to the question with the index of questionAsked to the inner HTML of the question element & how many question are left (maybe delete the firstr?)
     questionToAsk.innerHTML = nrQuestion + ". " + activeQuestion.question;
-    numberOfQuestions--;
+    numberOfQuestions -= 1;
     questionContainer.innerHTML = "Questions left: " + numberOfQuestions;
     runTimer(20);
     runCountdownBar(100);
@@ -139,7 +139,7 @@ function runGame () {
     next.addEventListener("click", ()=>{
         // checks if there are still questions left, if there are
         if (questionsAsked < questions.length){
-            questionsAsked++;
+            questionsAsked += 1;
             if (questionsAsked<questions.length){
                 clearInterval(timerCounter);
                 clearInterval(barCounter);
