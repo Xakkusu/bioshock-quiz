@@ -76,7 +76,7 @@ const questionsB1 = [
         question : "Does saving or harvesting the little sisters grant more Adam at the end of the game?",
         answers : [
             { text : "Both are the same", correct : false},
-            { text : "Savivng", correct : false},
+            { text : "Saving", correct : false},
             { text : "Harvesting", correct : true},
             { text : "Pure luck", correct : false}
         ]
@@ -139,30 +139,137 @@ const questionsB1 = [
 
 const questionsB2 = [
     {
-        question : "hahahahahhahahablablabla1?",
+        question : "Who is the main character you are playing in Bioshock II?",
         answers : [
-            { text : "a", correct : false},
-            { text : "b", correct : false},
-            { text : "c", correct : true},
-            { text : "d", correct : false}
+            { text : "Big Sister", correct : false},
+            { text : "Subject Sigma", correct : false},
+            { text : "Eleanor Lamb", correct : false},
+            { text : "Subject Delta", correct : true}
         ]
     },
     {
-        question : "blablabla2?",
+        question : "Who is the main antagonist of Bioshock II?",
         answers : [
-            { text : "a", correct : false},
-            { text : "b", correct : true},
-            { text : "c", correct : false},
-            { text : "d", correct : false}
+            { text : "Sofia Lamb", correct : true},
+            { text : "Eleanor Lamb", correct : false},
+            { text : "Augustus Sinclar", correct : false},
+            { text : "Gilbert Alexander", correct : false}
         ]
     },
     {
-        question : "blablabla3?",
+        question : "What is the name of ammunition vending machines?",
         answers : [
-            { text : "a", correct : true},
-            { text : "b", correct : false},
-            { text : "c", correct : false},
-            { text : "d", correct : false}
+            { text : "Gatherer's Garden", correct : false},
+            { text : "Circus of Values", correct : false},
+            { text : "Epstein the Swami machine", correct : false},
+            { text : "El Ammo Bandito", correct : true}
+        ]
+    },
+    {
+        question : "What are Big Sisters?",
+        answers : [
+            { text : "House maids", correct : false},
+            { text : "The female counterpart to big daddies", correct : false},
+            { text : "Little sisters who grown into adolescence", correct : true},
+            { text : "Nuns of a new religion", correct : false}
+        ]
+    },
+    {
+        question : "What is not true for Big Sisters?",
+        answers : [
+            { text : "They are all born from the same mother", correct : true},
+            { text : "They are highly aggressive", correct : false},
+            { text : "They can use plasmids due to being little sisters once", correct : false},
+            { text : "They kidnap girls from the uppwer world and turn them into little sisters", correct : false}
+        ]
+    },{
+        question : "How does Subject Delta meet Eleanor Lamb initially?",
+        answers : [
+            { text : "He was her teacher", correct : false},
+            { text : "He tried to gather Adam from her when he was a Splicer", correct : false},
+            { text : "He was a patient of Sofia Lamb", correct : false},
+            { text : "He was her Big Daddy", correct : true}
+        ]
+    },
+    {
+        question : "What is rapture's family?",
+        answers : [
+            { text : "Sofia Lamb's cult", correct : true},
+            { text : "Rapture's social agency", correct : false},
+            { text : "a kindergarden in Rapture", correct : false},
+            { text : "a famous jazz band", correct : false}
+        ]
+    },
+    {
+        question : "How did Eleanor become a Little Sister?",
+        answers : [
+            { text : "Andrew Ryan took her away froom her mother to punish her", correct : false},
+            { text : "She was sold to one of Fontaines orphanages by a caregiver", correct : true},
+            { text : "She ran away because her moother was too strict", correct : false},
+            { text : "Sofia Lamb sold her to get money for her cult", correct : false}
+        ]
+    },
+    {
+        question : "Why is the bond to Eleanor so important for Subject Delta?",
+        answers : [
+            { text : "He needs her Adam for himself", correct : false},
+            { text : "He needs her as religious-bargain against Sofia Lamb", correct : false},
+            { text : "He needs her advice in buying better ammunition", correct : false},
+            { text : "He will die if he strays too far away from her or if she dies", correct : true}
+        ]
+    },
+    {
+        question : "How does Sofia Lamb capture Subject Delta?",
+        answers : [
+            { text : "By a shot to his head from behind", correct : false},
+            { text : "By smoothering Eleanor and stoping her hart", correct : true},
+            { text : "By turning Eleanor against him", correct : false},
+            { text : "By flooding Rapture completely", correct : false}
+        ]
+    },
+    {
+        question : "How does Eleanor free Subject Delta?",
+        answers : [
+            { text : "By immediately killing her mother", correct : false},
+            { text : "By allowing him to take control over Little Sisters", correct : true},
+            { text : "By working with Andrew Ryan", correct : false},
+            { text : "By assembling a splicer army", correct : false}
+        ]
+    },
+    {
+        question : "What does Eleanor become at the end of the game?",
+        answers : [
+            { text : "a big Daddy", correct : false},
+            { text : "a Big Sister", correct : true},
+            { text : "Subject Gama", correct : false},
+            { text : "Sofia Lamb's successor", correct : false}
+        ]
+    },
+    {
+        question : "What happened to August Sinclair in the last part of the game?",
+        answers : [
+            { text : "Sofia Lamb made tranformed him into Subject Omega", correct : true},
+            { text : "He was forced to marry Sofia Lamb", correct : false},
+            { text : "He is completely controlled by Sophia Lamb and can't even speak for himself", correct : false},
+            { text : "He decided to never forgive Subject Delta for killing him", correct : false}
+        ]
+    },
+    {
+        question : "How many endings are there to Bioshock II?",
+        answers : [
+            { text : "Three", correct : false},
+            { text : "One", correct : false},
+            { text : "Eight", correct : false},
+            { text : "Six", correct : true}
+        ]
+    },
+    {
+        question : "What are Sofia Lamb's main values?",
+        answers : [
+            { text : "Genius of the individual", correct : false},
+            { text : "The Power of the state", correct : false},
+            { text : "Genius of the money machine", correct : false},
+            { text : "The power of the community & rebirth", correct : true}
         ]
     }
 ];
