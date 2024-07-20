@@ -189,7 +189,21 @@ function incrementScore (userAnswer) {
 // function to go to next question and increase question nr
 function nextQuestion(questionAsked) {
     // checks if there are still questions left, if there are
-    if (questionsAsked < questions.length){
+    if (questionsAsked === 14) {
+        modal.style.display = "none";
+        endOfGameContainer.style.display = "flex";
+        endOfGameContainer.style.justifyContent = "center";
+        endOfGameContainer.style.alignItems = "center";
+        finishSentence.innerHTML = `Congrats, ${localStorage.getItem("userName")} you finished the quiz!
+            Your score: ${score}`
+        //set value pair in local storage as true when game is finished
+        localStorage.setItem("finished", true);
+        addToLeaderboardBtn.addEventListener("click", function() {
+            endScore = score;
+            localStorage.setItem("userScore", endScore);
+            window.location.replace("index.html");
+        })
+    } else if  (questionsAsked < questions.length){
         alert(questionsAsked);
         questionsAsked ++;
         alert(questionsAsked);
