@@ -136,31 +136,7 @@ function runGame () {
 
     // when next button is clicked next question will be asked
     // in runGame body since it went through the question wrong on its own
-    next.addEventListener("click", ()=>{
-        // checks if there are still questions left, if there are
-        if (questionsAsked < questions.length){
-            questionsAsked += 1;
-            if (questionsAsked<questions.length){
-                clearInterval(timerCounter);
-                clearInterval(barCounter);
-                runGame();
-            }
-        } else {
-            modal.style.display = "none";
-            endOfGameContainer.style.display = "flex";
-            endOfGameContainer.style.justifyContent = "center";
-            endOfGameContainer.style.alignItems = "center";
-            finishSentence.innerHTML = `Congrats, ${localStorage.getItem("userName")} you finished the quiz!
-                Your score: ${score}`
-            //set value pair in local storage as true when game is finished
-            localStorage.setItem("finished", true);
-            addToLeaderboardBtn.addEventListener("click", function() {
-                endScore = score;
-                localStorage.setItem("userScore", endScore);
-                window.location.replace("index.html");
-            })
-        }
-    });
+    next.addEventListener("click", nextQuestion);
 
 }
 
@@ -208,6 +184,35 @@ function incrementScore (userAnswer) {
         score++;
     }
     containerScore.innerHTML= "Score: " + score;
+}
+
+// function to go to next question and increase question nr
+function nextQuestion(questionAsked) {
+    // checks if there are still questions left, if there are
+    if (questionsAsked < questions.length){
+        alert(questionsAsked);
+        questionsAsked ++;
+        alert(questionsAsked);
+        if (questionsAsked<questions.length){
+            clearInterval(timerCounter);
+            clearInterval(barCounter);
+            runGame();
+        }
+    } else {
+        modal.style.display = "none";
+        endOfGameContainer.style.display = "flex";
+        endOfGameContainer.style.justifyContent = "center";
+        endOfGameContainer.style.alignItems = "center";
+        finishSentence.innerHTML = `Congrats, ${localStorage.getItem("userName")} you finished the quiz!
+            Your score: ${score}`
+        //set value pair in local storage as true when game is finished
+        localStorage.setItem("finished", true);
+        addToLeaderboardBtn.addEventListener("click", function() {
+            endScore = score;
+            localStorage.setItem("userScore", endScore);
+            window.location.replace("index.html");
+        })
+    }
 }
 
 // function to show timer of 20 seconds, set function insdie function as it won't work otherwise
