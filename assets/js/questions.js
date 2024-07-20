@@ -276,30 +276,138 @@ const questionsB2 = [
 
 const questionsB3 = [
     {
-        question : "basadafafQ3lablabla1?",
+        question : "What is Bioshock III's official name?",
         answers : [
-            { text : "a", correct : false},
-            { text : "b", correct : false},
-            { text : "c", correct : true},
-            { text : "d", correct : false}
+            { text : "Bioshock Fascist", correct : false},
+            { text : "Bioshock Infinite", correct : true},
+            { text : "Bioshock in the clouds", correct : false},
+            { text : "Bioshock Finite", correct : false}
         ]
     },
     {
-        question : "blablabla2?",
+        question : "What is the city called in which Bioshock Infiinite takes place?",
         answers : [
-            { text : "a", correct : false},
-            { text : "b", correct : true},
-            { text : "c", correct : false},
-            { text : "d", correct : false}
+            { text : "Columbus", correct : false},
+            { text : "Manhatten", correct : false},
+            { text : "Columbia", correct : true},
+            { text : "Winnenden", correct : false}
         ]
     },
     {
-        question : "blablabla3?",
+        question : "Who are you mainly playing in Bioshock I?",
         answers : [
-            { text : "a", correct : true},
-            { text : "b", correct : false},
-            { text : "c", correct : false},
-            { text : "d", correct : false}
+            { text : "Zachary Hale Comstock", correct : false},
+            { text : "Booker DeWitt", correct : true},
+            { text : "Elizabeth", correct : false},
+            { text : "Songbird", correct : false}
+        ]
+    },
+    {
+        question : "How does Booker first arrive at the lighthouse?",
+        answers : [
+            { text : "By a boat ride from the Lutece twins", correct : true},
+            { text : "By a plane ride from the Lutece twins ", correct : false},
+            { text : "By a ride from Songbirg", correct : false},
+            { text : "By swimming through the ocean", correct : false}
+        ]
+    },
+    {
+        question : "What is Booker DeWitts oficial job?",
+        answers : [
+            { text : "politician", correct : false},
+            { text : "slave owner", correct : false},
+            { text : "babysitter", correct : false},
+            { text : "private investigator", correct : true}
+        ]
+    },
+    {
+        question : "What is the main phrase that follows Booker throughout the game?",
+        answers : [
+            { text : "bring us the girl and wipe away the debt", correct : true},
+            { text : "bring us the bird and wipe away the debt", correct : false},
+            { text : "bring us the girl and wipe her away", correct : false},
+            { text : "bring us the money and wipe away the debt", correct : false}
+        ]
+    },
+    {
+        question : "What are the letters carved into Booker's hand?",
+        answers : [
+            { text : "ED", correct : false},
+            { text : "BD", correct : false},
+            { text : "AD", correct : true},
+            { text : "OD", correct : false}
+        ]
+    },
+    {
+        question : "Who is the lamb Comstock always mentions?",
+        answers : [
+            { text : "a fat animal", correct : false},
+            { text : "Elizabeth", correct : true},
+            { text : "Songbird", correct : false},
+            { text : "Jesus", correct : false}
+        ]
+    },
+    {
+        question : "What is the name of the militant underground insurgency group?",
+        answers : [
+            { text : "Vox Populi", correct : true},
+            { text : "Badger Populi ", correct : false},
+            { text : "Daisy Fitzroy's gang", correct : false},
+            { text : "Vietkong", correct : false}
+        ]
+    },
+    {
+        question : "Where is Elizabeth kept in the beginning of the game?",
+        answers : [
+            { text : "in Songbird", correct : false},
+            { text : "in prison", correct : false},
+            { text : "in Paris", correct : false},
+            { text : "in monument islands' tower", correct : true}
+        ]
+    },
+    {
+        question : "What are tears in the game?",
+        answers : [
+            { text : "things that happen when you are sad ):", correct : false},
+            { text : "a rip in dimensional time and space, revealing an alternate universe  ", correct : true},
+            { text : "a rip in the system to make the city float", correct : false},
+            { text : "songbird's children", correct : false}
+        ]
+    },
+    {
+        question : "Who was Zachary Hale Comstock before his baptism?",
+        answers : [
+            { text : "Booker DeWitt", correct : true},
+            { text : "Andrew Ryan", correct : false},
+            { text : "Jeremiah Fink", correct : false},
+            { text : "Robert Lutece", correct : false}
+        ]
+    },
+    {
+        question : "Who is AD?",
+        answers : [
+            { text : "Booker's son, Alex DeWitt", correct : false},
+            { text : "Comsock's Mother, Annabelle DeWitt", correct : false},
+            { text : "Songbird's real name, August Delphis", correct : false},
+            { text : "Booker's daughter, Anna DeWitt", correct : true}
+        ]
+    },
+    {
+        question : "What famous movie's name appears in one of the tears?",
+        answers : [
+            { text : "Scarfacce", correct : false},
+            { text : "Revenge of the Jedi", correct : true},
+            { text : "Shining", correct : false},
+            { text : "Grease", correct : false}
+        ]
+    },
+    {
+        question : "How many endings are there to Bioshock Infinite?",
+        answers : [
+            { text : "Two", correct : false},
+            { text : "Five", correct : false},
+            { text : "Four", correct : false},
+            { text : "One", correct : true}
         ]
     }
 ];
