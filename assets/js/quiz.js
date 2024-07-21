@@ -42,6 +42,8 @@ for (let i = 0; i<btn.length; i++){
             questions = [...questionsB2];
         } else if (this.id === "choose-b3"){
             questions = [...questionsB3];
+        } else if (this.id === "choose-b-all"){
+            questions = [...questionsBAll];
         };
         setUp();
         modal.style.display = "flex";

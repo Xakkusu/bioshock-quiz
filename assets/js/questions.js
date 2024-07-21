@@ -37,7 +37,7 @@ const questionsB1 = [
         ]
     },
     {
-        question : "How are the most common enemies in the game called",
+        question : "What are the most common enemies in the game called?",
         answers : [
             { text : "Soldiers", correct : false},
             { text : "Capitalists", correct : false},
@@ -281,7 +281,7 @@ const questionsB3 = [
             { text : "Bioshock Fascist", correct : false},
             { text : "Bioshock Infinite", correct : true},
             { text : "Bioshock in the clouds", correct : false},
-            { text : "Bioshock Finite", correct : false}
+            { text : "Bioshock return of the skibidy", correct : false}
         ]
     },
     {
@@ -294,7 +294,7 @@ const questionsB3 = [
         ]
     },
     {
-        question : "Who are you mainly playing in Bioshock I?",
+        question : "Who are you mainly playing in Bioshock Infinite ?",
         answers : [
             { text : "Zachary Hale Comstock", correct : false},
             { text : "Booker DeWitt", correct : true},
@@ -408,6 +408,144 @@ const questionsB3 = [
             { text : "Five", correct : false},
             { text : "Four", correct : false},
             { text : "One", correct : true}
+        ]
+    }
+];
+
+const questionsBAll = [
+    {
+        question : "What is not true for Big Sisters?",
+        answers : [
+            { text : "They are all born from the same mother", correct : true},
+            { text : "They are highly aggressive", correct : false},
+            { text : "They can use plasmids due to being little sisters once", correct : false},
+            { text : "They kidnap girls from the uppwer world and turn them into little sisters", correct : false}
+        ]
+    },
+    {
+        question : "Who are you playing in Bioshock I?",
+        answers : [
+            { text : "James", correct : false},
+            { text : "Jack", correct : true},
+            { text : "John", correct : false},
+            { text : "Jacob", correct : false}
+        ]
+    },
+    {
+        question : "Who are you mainly playing in Bioshock Infinite ?",
+        answers : [
+            { text : "Zachary Hale Comstock", correct : false},
+            { text : "Booker DeWitt", correct : true},
+            { text : "Elizabeth", correct : false},
+            { text : "Songbird", correct : false}
+        ]
+    },
+    {
+        question : "How does Booker first arrive at the lighthouse in Bioshock Infinite?",
+        answers : [
+            { text : "By a boat ride from the Lutece twins", correct : true},
+            { text : "By a plane ride from the Lutece twins ", correct : false},
+            { text : "By a ride from Songbirg", correct : false},
+            { text : "By swimming through the ocean", correct : false}
+        ]
+    },
+    {
+        question : "Who is the founder of Rapture?",
+        answers : [
+            { text : "Andrew Ryan", correct : true},
+            { text : "Atlas", correct : false},
+            { text : "Brigid Tenenbaum", correct : false},
+            { text : "Frank Fontaine", correct : false}
+        ]
+    },
+    {
+        question : "What is rapture's family?",
+        answers : [
+            { text : "Sofia Lamb's cult", correct : true},
+            { text : "Rapture's social agency", correct : false},
+            { text : "a kindergarden in Rapture", correct : false},
+            { text : "a famous jazz band", correct : false}
+        ]
+    },
+    {
+        question : "What happened to August Sinclair in the last part of Bioshock II?",
+        answers : [
+            { text : "Sofia Lamb made tranformed him into Subject Omega", correct : true},
+            { text : "He was forced to marry Sofia Lamb", correct : false},
+            { text : "He is completely controlled by Sophia Lamb and can't even speak for himself", correct : false},
+            { text : "He decided to never forgive Subject Delta for killing him", correct : false}
+        ]
+    },
+    {
+        question : "When killing Andrew Ryan for Atlas what is the secret being revealed?",
+        answers : [
+            { text : "The little sisters are your children", correct : false},
+            { text : "Andrew Ryan is your father", correct : true},
+            { text : "Atlas is your father", correct : false},
+            { text : "Brigid Tenenbaum is your mother", correct : false}
+        ]
+    },
+    {
+        question : "What is the name of the militant underground insurgency group in Bioshock Infinite?",
+        answers : [
+            { text : "Vox Populi", correct : true},
+            { text : "Badger Populi ", correct : false},
+            { text : "Daisy Fitzroy's gang", correct : false},
+            { text : "Vietkong", correct : false}
+        ]
+    },
+    {
+        question : "In Bioshock II which cat can be found in Dionysus Park?",
+        answers : [
+            { text : "Ghassan", correct : false},
+            { text : "Spinelli", correct : false},
+            { text : "Nezuko", correct : false},
+            { text : "Schrödinger", correct : true}
+        ]
+    },
+    {
+        question : "Which is a easter egg in Bioshock I?",
+        answers : [
+            { text : "a drawing of Pikachu", correct : false},
+            { text : "a Pac-Man reference from rotten food", correct : true},
+            { text : "an homage to souls-like games", correct : false},
+            { text : "letters from King Arthur made from skin", correct : false}
+        ]
+    },
+    {
+        question : "Which Bioshock I & II related store can be found in Bioshock Infinite?",
+        answers : [
+            { text : "Adam's Delight", correct : false},
+            { text : "Meet your Little Sister", correct : false},
+            { text : "Rapture's Records", correct : true},
+            { text : "A splice of life", correct : false}
+        ]
+    },
+    {
+        question : "In the DLC Burial At Sea which sad scene can be seen?",
+        answers : [
+            { text : "Subject Delta not getting any christmas gifts", correct : false},
+            { text : "Jack killing his twin", correct : false},
+            { text : "Booker pushing a 'Pull'-door", correct : false},
+            { text : "a Little Sister crying over a dead Big Daddy", correct : true}
+        ]
+    },
+    {
+        question : "What enemy was planned to be included in Bioshock Infinite?",
+        answers : [
+            { text : "Claw Daddy", correct : true},
+            { text : "Jelly Mommy", correct : false},
+            { text : "Croc Brother", correct : false},
+            { text : "Spider Aunt", correct : false}
+        ]
+    },
+    {
+        question : "Did Songbird deserve to die?",
+        answers : [
+            { text : "No, but sincce he killed Booker...", correct : false},
+            { text : "Yes, Elizabeth never showed any connection to him", correct : false},
+            { text : "Yes, I hate birds", correct : false},
+            { text : "No, he was just a good little, loyal boy", correct : true}
         ]
     }
 ];
