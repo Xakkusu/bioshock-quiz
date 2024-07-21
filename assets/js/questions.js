@@ -495,7 +495,7 @@ const questionsBAll = [
         ]
     },
     {
-        question : "In Bioshock II which cat can be found in Dionysus Park?",
+        question : "In Bioshock II which frozen cat can be found in Dionysus Park?",
         answers : [
             { text : "Ghassan", correct : false},
             { text : "Spinelli", correct : false},
