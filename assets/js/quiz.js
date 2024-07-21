@@ -233,6 +233,7 @@ function nextQuestion(questionAsked) {
 
 // function to show timer of 20 seconds, set function insdie function as it won't work otherwise
 // still dont like how at the beginning it still shows the seconds before it kp
+// used several info-pages for the timer functions: https://javascript.info/settimeout-setinterval, https://www.shecodes.io/athena/52336-how-to-create-a-countdown-timer-in-javascript & https://www.youtube.com/watch?v=JRevaOwNKTI
 function runTimer (timeToAnswer) {
     timerCounter = setInterval(() => {
         seconds.innerHTML = timeToAnswer;
