@@ -44,13 +44,13 @@ for (let i = 0; i<btn.length; i++){
             questions = [...questionsB3];
         } else if (this.id === "choose-b-all"){
             questions = [...questionsBAll];
-        };
+        }
         setUp();
         modal.style.display = "flex";
         modal.style.justifyContent = "center";
         modal.style.alignItems = "center";
     }
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -73,11 +73,11 @@ window.onclick = function(event) {
         } else if (event.target === restartGameBtn) {
             window.location.replace("quiz.html");
         }
-    }
+    };
   } else if (event.target === redoGameBtn) {
     window.location.replace("quiz.html");
   }
-}
+};
 
 
 // used https://www.youtube.com/watch?v=PBcqGxrr9g8&t=14s to get to know the basic structure
@@ -133,7 +133,7 @@ function runGame () {
             button.dataset.correct = answer.correct;
         }
         // add click effect when player choses a button
-        button.addEventListener("click", checkAnswer)
+        button.addEventListener("click", checkAnswer);
     });
 
     // when next button is clicked next question will be asked
@@ -220,14 +220,14 @@ function nextQuestion(questionAsked) {
         endOfGameContainer.style.justifyContent = "center";
         endOfGameContainer.style.alignItems = "center";
         finishSentence.innerHTML = `Congrats, ${localStorage.getItem("userName")} you finished the quiz!
-            Your score: ${score}`
+            Your score: ${score}`;
         //set value pair in local storage as true when game is finished
         localStorage.setItem("finished", true);
         addToLeaderboardBtn.addEventListener("click", function() {
             endScore = score;
             localStorage.setItem("userScore", endScore);
             window.location.replace("index.html");
-        })
+        });
     }
 }
 
@@ -242,7 +242,7 @@ function runTimer (timeToAnswer) {
             clearInterval(timerCounter);
             timesUp();
         }}
-    , 1000)
+    , 1000);
 }
 
 // function to stop timer after the time is uo
@@ -274,7 +274,7 @@ function runCountdownBar(countdownBarWidth){
     },
     // got to 215 through testing which will act accordingly to 20 seconds
     213
-)
+);
 }
 
 //maybe to add in futue 1. restart/reset function, 
