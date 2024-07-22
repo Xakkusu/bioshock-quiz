@@ -53,6 +53,14 @@ a {
     padding: 0 10px;
 }
 
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
 table {
     width: 80%;
     min-width: 600px;
@@ -63,7 +71,6 @@ th, td {
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
     height: 30px;
 }
-
 
 .nameLeaderboard {
     width: 75%;
@@ -78,6 +85,7 @@ th, td {
     margin: 5px 0;
     cursor: pointer; /* change to an image? */
     border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.40) 0 10px 15px;
 }
 
 /* undesrtood the whole border image concept through the following video: https://www.youtube.com/watch?v=ypstT5UfCsk*/
