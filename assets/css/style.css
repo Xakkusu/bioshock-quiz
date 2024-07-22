@@ -23,9 +23,9 @@ body {
 
 /*  Heading Styles */
 h1 {
-    font-family: "Limelight", sans-serif;
+    font-family: "Limelight", "Didact Gothic", sans-serif;
     font-size: 160%;
-    padding: 10px;
+    padding: 5px 10px;
     text-transform: uppercase;
     font-style: normal;
     font-weight: 600;
@@ -37,12 +37,14 @@ h1 {
 }
 
 h2 {
-    font-family: "Limelight", sans-serif;
+    font-family: "Limelight", "Didact Gothic", sans-serif;
     font-size: 150%;
-    padding: 10px;
+    padding: 5px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #C0A557;
+    font-weight: 100;
 }
 
 a {
@@ -75,18 +77,22 @@ th, td {
     width: 200px;
     margin: 5px 0;
     cursor: pointer; /* change to an image? */
+    border-radius: 25px;
 }
 
 /* undesrtood the whole border image concept through the following video: https://www.youtube.com/watch?v=ypstT5UfCsk*/
 .quiz-body{
-    width: 90%;
+    width: 93%;
     max-width: 800px;
     background-image: linear-gradient(#084139ef, #305c32e1, #2f5c32de, #084139ef);
     border: 40px solid #084139ef;
     border-image-source: url(../images/border-image.png);
     border-image-slice: 1166;
-    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
-
+    box-shadow: rgba(0, 0, 0, 0.45) 0 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     /*background-color: #084139ef;*/
     margin: 0;
     padding: 20px;
@@ -213,5 +219,11 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
     }
     .logo-image {
         height: 120px;
+    }
+    h2 {
+        font-size: 150%;
+        padding: 10px 5px;
+        font-style: normal;
+        font-weight: 400;
     }
 }
