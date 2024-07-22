@@ -24,11 +24,16 @@ body {
 /*  Heading Styles */
 h1 {
     font-family: "Limelight", sans-serif;
-    font-size: 200%;
+    font-size: 160%;
     padding: 10px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 8px;
 }
 
 h2 {
@@ -42,6 +47,8 @@ h2 {
 
 a {
     text-decoration: none;
+    color: #C0A557;
+    padding: 0 10px;
 }
 
 table {
@@ -54,6 +61,7 @@ th, td {
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
     height: 30px;
 }
+
 
 .nameLeaderboard {
     width: 75%;
@@ -82,6 +90,11 @@ th, td {
     /*background-color: #084139ef;*/
     margin: 0;
     padding: 20px;
+}
+
+/* Logo image styling */
+.logo-image {
+    height: 90px;
 }
 
 #select-game-type h2{
