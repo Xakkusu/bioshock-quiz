@@ -62,14 +62,20 @@ form {
 }
 
 table {
-    width: 80%;
-    min-width: 600px;
+    width: 75%;
+    min-width: 270px;
+    padding: 10px;
 }
 
 th, td {
     border: solid 1px black;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
     height: 30px;
+    padding-left: 10px;
+}
+
+th {
+    font-weight: 600;
 }
 
 .nameLeaderboard {
@@ -98,7 +104,7 @@ th, td {
     width: 93%;
     height: 60%;
     min-height: 280px;
-    max-width: 800px;
+    max-width: 700px;
     background-image: linear-gradient(#084139ef, #305c32e1, #2f5c32de, #084139ef);
     border: 40px solid #084139ef;
     border-image-source: url(../images/border-image.png);
@@ -299,6 +305,7 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
         line-height: 40px;
     }
 
+    /* make modals and their contents responsive */
     #modal-how-to-play, 
     #modal-leaderboard,
     #game-content-container{
@@ -310,15 +317,23 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
         line-height: 1.5em;
         font-size: 1.2rem;
     }
-
     table {
         width: 80%;
-        min-width: 600px;
+        min-width: 500px;
+        max-width: 650px;
     }
-    
-    th, td {
-        border: solid 1px black;
-        box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
-        height: 30px;
+
+}
+
+/* Media:query add responsiveness large screens (768px and up)*/
+@media screen and (min-width: 992px) {
+    .quiz-body{
+        width: 70%;
+    }
+
+    #modal-how-to-play, 
+    #modal-leaderboard,
+    #game-content-container{
+        width: 70%;
     }
 }
