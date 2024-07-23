@@ -175,6 +175,10 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
     line-height: 1.3em;
     font-size: 1rem;
     text-align: justify;
+    border: 10px solid #08462e;
+    border-image-source: url(../images/border-image.png);
+    border-image-slice: 100;
+    box-shadow: rgba(0, 0, 0, 0.45) 0 5px 15px;
 }
 
 #end-of-game-container {
