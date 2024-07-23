@@ -273,4 +273,19 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
         box-shadow: unset;
         box-shadow: rgba(213, 194, 124, 0.35) 0px 5px 15px;
     }
+
+    /* make buttons and input field larger on bigger screens */
+    .btn {
+        font-weight: 600;
+        width: 270px;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        min-height: 40px;
+    }
+
+    #name-of-player {
+        width: 270px;
+        font-size: 1.2rem;
+        line-height: 40px;
+    }
 }
