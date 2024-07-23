@@ -57,7 +57,7 @@ namePlayer.addEventListener("keydown", function(event){
     } else {
       event.preventDefault();
       localStorage.setItem("userName", namePlayer.value);
-      form.submit();
+      window.location.replace("quiz.html");
     }
   }
 });
@@ -70,7 +70,7 @@ letsPlayBtn.addEventListener("click", function(event){
     event.preventDefault();
     localStorage.setItem("userName", namePlayer.value);
     alert(`${localStorage.getItem("userName")} lez go`);
-    form.submit();
+    window.location.replace("quiz.html");
   }
 });
 
