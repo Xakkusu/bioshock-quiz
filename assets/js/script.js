@@ -11,6 +11,7 @@ let howToPlayText = document.getElementById("how-to-play-text");
 let btn1 = document.getElementById("how-to-play-btn");
 let modal2 = document.getElementById("leaderboard-container");
 let btn2 = document.getElementById("leaderboard-btn");
+let returnBtn = document.getElementsByClassName("return-button");
 
 // When the user clicks on the button, open the modal
 //kann ich hier nicht einfach so ähnlich wi unten machen mit if id=="" then?
@@ -31,6 +32,9 @@ window.onclick = function(event) {
     modal1.style.display = "none";
   } else if (event.target == modal2) {
     modal2.style.display = "none";
+  } else if (event.target == returnBtn[0] || event.target == returnBtn[1]) {
+    modal2.style.display = "none";
+    modal1.style.display = "none";
   }
 };
 

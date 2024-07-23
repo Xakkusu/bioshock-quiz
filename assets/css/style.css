@@ -103,7 +103,7 @@ th {
 .quiz-body{
     width: 93%;
     height: 60%;
-    min-height: 280px;
+    min-height: 500px;
     max-width: 700px;
     background-image: linear-gradient(#084139ef, #305c32e1, #2f5c32de, #084139ef);
     border: 40px solid #084139ef;
@@ -125,7 +125,7 @@ th {
 }
 
 #select-game-type h2{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #C0A557;
 }
 
 #name-of-player {
@@ -174,12 +174,12 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 90%;
+    height: 95%;
     background-image: linear-gradient(#08462e, #084139, #094139, #084139, #08462e);
     color: #C0A557;
     letter-spacing: 1px;
     line-height: 1.3em;
-    font-size: 1rem;
+    font-size: 1em;
     text-align: justify;
     border: 10px solid #08462e;
     border-image-source: url(../images/border-image.png);
@@ -294,7 +294,7 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
     .btn {
         font-weight: 600;
         width: 270px;
-        font-size: 1.2rem;
+        font-size: 1.2em;
         letter-spacing: 1px;
         min-height: 40px;
     }
@@ -322,7 +322,6 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
         min-width: 500px;
         max-width: 650px;
     }
-
 }
 
 /* Media:query add responsiveness large screens (768px and up)*/
