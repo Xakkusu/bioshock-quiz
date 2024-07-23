@@ -163,12 +163,18 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
 #game-content-container{
     margin: auto;
     padding: 20px;
-    width: 90%;
+    width: 93%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60%;
-    background-color: blueviolet;
+    flex-direction: column;
+    height: 90%;
+    background-image: linear-gradient(#08462e, #084139, #094139, #084139, #08462e);
+    color: #C0A557;
+    letter-spacing: 1px;
+    line-height: 1.3em;
+    font-size: 1rem;
+    text-align: justify;
 }
 
 #end-of-game-container {
@@ -288,4 +294,22 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
         font-size: 1.2rem;
         line-height: 40px;
     }
+
+    #modal-how-to-play, 
+    #modal-leaderboard,
+    #game-content-container{
+        margin: auto;
+        padding: 20px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 60%;
+        background-image: linear-gradient(#08462e, #084139, #094139, #084139, #08462e);
+        color: #C0A557;
+        letter-spacing: 1px;
+        line-height: 1.5em;
+        font-size: 1.2rem;
+}
 }
