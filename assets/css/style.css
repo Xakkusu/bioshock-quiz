@@ -329,7 +329,7 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
     /* add hover effects for buttons */
     .btn:hover {
         box-shadow: unset;
-        box-shadow: rgba(213, 194, 124, 0.35) 0px 5px 15px;
+        box-shadow: rgba(213, 194, 124, 0.80) 0px 5px 15px;
     }
 
     /* make buttons and input field larger on bigger screens */
