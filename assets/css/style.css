@@ -275,12 +275,14 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
 
 .true-answer {
     background-color: green;
+    background-image: linear-gradient(#84c469, #6fa854, #84c469);
     color: white;
     transition: 0.5s;
 }
 
 .false-answer {
     background-color: red;
+    background-image: linear-gradient(#e48f79, #E17A61, #e48f79);
     color: white;
     transition: 0.5s;
 }
