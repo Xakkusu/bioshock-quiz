@@ -234,6 +234,20 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
     background-color: rgb(32, 162, 223);
 }
 
+/* Question and Timer section */
+#all-game-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#question {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
 .in-game-btn {
     width: 80%;
     min-width: 250px;
@@ -434,5 +448,9 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
 
     .in-game-btn {
         max-width: 450px;
+    }
+
+    #question {
+        font-size: 1.3rem;
     }
 }
