@@ -252,8 +252,25 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
     gap: 5px;
 }
 
+/* next button to be styled and centered */
+
+#container-next{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
 #next-btn{
     display: none;
+    width: 30%;
+    min-width: 100px;
+    max-width: 150px;
+    text-align: center;
+    padding: 5px 10px;
+    background-image: linear-gradient(#212424, #2b2e2d, #212424);
+    color: #B0C2BF;
+    align-self: center;
+    font-size: 1em;
 }
 
 .true-answer {
