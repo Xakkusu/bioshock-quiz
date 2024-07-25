@@ -102,10 +102,11 @@ function runGame () {
     document.addEventListener("keydown", function(event){
     if (event.key === "Enter"){
         event.preventDefault();
-    } else if (event.key === " "){
+    } else if (event.key === " " || event.code == "Space" || event.code == 32){
         event.preventDefault();
     }
     });
+
     rebootGame();
     next.style.display = "none";
     // create variable for active question being asked which will change witht the progress of the game
