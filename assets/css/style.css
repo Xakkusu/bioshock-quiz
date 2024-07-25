@@ -467,6 +467,11 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
         font-size: 1.2rem;
     }
 
+    #end-of-game-container {
+        width: 60%;
+        height: 45%;
+    }
+
     .return-button{
         bottom: 5%;
     }
