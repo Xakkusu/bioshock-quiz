@@ -431,6 +431,7 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
     #game-content-container{
         padding: 20px 30px;
         width: 80%;
+        max-width: 1200px;
         letter-spacing: 1px;
         line-height: 1.5em;
         font-size: 1.2rem;
