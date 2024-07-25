@@ -204,7 +204,7 @@ function nextQuestion(questionAsked) {
         endOfGameContainer.style.display = "flex";
         endOfGameContainer.style.justifyContent = "center";
         endOfGameContainer.style.alignItems = "center";
-        finishSentence.innerHTML = `Congrats, ${localStorage.getItem("userName")} you finished the quiz!
+        finishSentence.innerHTML = `Congrats, ${localStorage.getItem("userName")} you finished the quiz!\n
             Your score: ${score}`
         //set value pair in local storage as true when game is finished
         localStorage.setItem("finished", true);
@@ -214,9 +214,11 @@ function nextQuestion(questionAsked) {
             window.location.replace("index.html");
         })
     } else if  (questionsAsked < questions.length){
-        alert(questionsAsked);
+        //take out if everything works
+        //alert(questionsAsked);
         questionsAsked ++;
-        alert(questionsAsked);
+        //take out if everything works
+        //alert(questionsAsked);
         if (questionsAsked<questions.length){
             clearInterval(timerCounter);
             clearInterval(barCounter);

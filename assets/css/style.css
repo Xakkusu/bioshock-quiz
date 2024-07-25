@@ -219,8 +219,29 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 60%;
-    background-color: blueviolet;
+    background-image: linear-gradient(#084139fd, #305c32fa, #2f5c32f8, #084139);
+    border: 10px solid #084139;
+    border-image-source: url(../images/border-image.png);
+    border-image-slice: 100;
+    box-shadow: rgba(0, 0, 0, 0.45) 0 5px 15px;
+}
+
+#end-of-game-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#finish-sentence,
+#would-you-kindly {
+    color: #C0A557;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    padding: 5px;
 }
 
 #restart-game-container {
@@ -504,4 +525,5 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
     #container-game-information {
         font-size: 1rem;
     }
+    
 }
