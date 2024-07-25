@@ -101,6 +101,34 @@ Interested? Then check it out here: [Bioshock Quiz](https://xakkusu.github.io/bi
 ### Languages
 ### Frameworks, Libraries and Programs used
 ## DEPLOYMENT
+The steps to deploy this project using GitHub pages were the following:
+1. Go to the Settings tab of your GitHub repository.
+2. On the left-hand sidebar, in the Code and automation section, select "Pages".
+3. Make sure to select the following:
+    - Source is set to 'Deploy from Branch'.
+    - Main branch is selected.
+    - Folder is set to / (root).
+4. Click Save next to /root.
+5. "Your GitHub Pages site is currently being built from the main branch." shows up.
+6. Go back to the Code tab. Wait a few minutes for the build to finish and refresh your repository where a Deployments section will show the deployed project.
+
+The live link can be found here - [Bioshock Quiz](https://xakkusu.github.io/bioshock-quiz/index.html)
+
+How to run the project locally:
+
+Fork the repository:
+- Log in (or sign up) to Github.
+- Go to the repository for: Xakkusu/bioshock-quiz.
+- Click the Fork button in the top right corner.
+
+#### Clone repository:
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for: Xakkusu/bioshock-quiz.
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+6. A clone of the repository will now be created on your machine.
+
 ## CREDITS
 ### Media
 ### Resources
