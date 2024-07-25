@@ -46,6 +46,24 @@ Interested? Then check it out here: [Bioshock Quiz](https://xakkusu.github.io/bi
 - [ACKNOWLEDGEMENTS](#acknowledgements)
 ## SITE OWNER GOALS
 ## USER EXPERIENCE (UX)
+
+#### First Time User Goals
+- I want to take a Bioshock quiz to test my knowledge
+- I want to understand the website, its structure and how to take the quiz
+- I want the quiz to be easy to use and navigate
+- I want to take the quiz whenever, whereever
+- I want to take the test on whichever device
+
+#### Returning User Goals
+- I want to be able to choose between different types of quizes
+- I want to be able to improve my knowledge of the Bioshock series
+
+#### Frequent User Goals
+- I want to be able to choose between different types of quizes
+- I want to be able to improve my knowledge of the Bioshock series
+- I want to be able to see my score of the quiz outside of taking the quiz
+
+
 ## WIREFRAMES
 ## FINAL DESIGN
 ### Imagery
