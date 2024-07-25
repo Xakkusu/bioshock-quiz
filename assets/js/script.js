@@ -69,7 +69,7 @@ letsPlayBtn.addEventListener("click", function(event){
   } else {
     event.preventDefault();
     localStorage.setItem("userName", namePlayer.value);
-    alert(`${localStorage.getItem("userName")} lez go`);
+    alert(`Hi, ${localStorage.getItem("userName")}, let the game begin`);
     window.location.replace("quiz.html");
   }
 });
