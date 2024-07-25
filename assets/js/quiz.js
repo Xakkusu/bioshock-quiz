@@ -122,6 +122,13 @@ function runGame () {
     runTimer(20);
     runCountdownBar(100);
 
+    const forAnswerShuffle = activeQuestion.answers;
+
+    for (let i = forAnswerShuffle.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [forAnswerShuffle[i], forAnswerShuffle[j]] = [forAnswerShuffle[j], forAnswerShuffle[i]];
+    }
+
     // create new buttons for answers
     activeQuestion.answers.forEach(answer => {
         // kann ich hier nicht einfach gleich den Value in die bestehende buttons geben? unbedingt testen sobald das gelernte erst funktionen, wäre dann kürzer & vllt einfacher zu verstehen!!!!!!!!!!
