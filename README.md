@@ -81,7 +81,6 @@ Interested? Then check it out here: [Bioshock Quiz](https://xakkusu.github.io/bi
 ### 404 Page
 ### Future Features
 - good Database for scoreboard
-- shuffle answers, only found for arrays so far but the elements within were objects
 ## TESTING
 ### Accessibility
 ### W3C Validators

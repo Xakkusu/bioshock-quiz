@@ -122,8 +122,8 @@ function runGame () {
     runTimer(20);
     runCountdownBar(100);
 
+    // used the following instrudctions for the Fisher-Yates Shuffle to be able to shuffle answers https://medium.com/@khaledhassan45/how-to-shuffle-an-array-in-javascript-6ca30d53f772
     const forAnswerShuffle = activeQuestion.answers;
-
     for (let i = forAnswerShuffle.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [forAnswerShuffle[i], forAnswerShuffle[j]] = [forAnswerShuffle[j], forAnswerShuffle[i]];

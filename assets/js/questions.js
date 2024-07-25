@@ -359,10 +359,10 @@ const questionsB3 = [
     {
         question : "Where is Elizabeth kept in the beginning of the game?",
         answers : [
-            { text : "in Songbird", correct : false},
-            { text : "in prison", correct : false},
-            { text : "in Paris", correct : false},
-            { text : "in monument islands' tower", correct : true}
+            { text : "Songbird", correct : false},
+            { text : "prison", correct : false},
+            { text : "Paris", correct : false},
+            { text : "Monument Islands' tower", correct : true}
         ]
     },
     {
