@@ -287,7 +287,7 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5px;
+    gap: 8px;
 }
 
 /* next button to be styled and centered */

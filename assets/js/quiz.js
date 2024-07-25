@@ -98,7 +98,14 @@ function setUp(){
 // function to start the game
 function runGame () {
     
-    // 
+    // listener to fix bug of wrong question-left counter and resetting timer when pressing enter or spacebar
+    document.addEventListener("keydown", function(event){
+  if (event.key === "Enter"){
+    event.preventDefault();
+    } else if (event.key === 32){
+      event.preventDefault();
+    }
+  });
     rebootGame();
     next.style.display = "none";
     // create variable for active question being asked which will change witht the progress of the game
