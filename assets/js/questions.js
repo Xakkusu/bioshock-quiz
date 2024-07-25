@@ -4,7 +4,7 @@ const questionsB1 = [
         question : "What is the city called in which Bioshock I takes place?",
         answers : [
             { text : "Fracture", correct : false},
-            { text : "Manhatten", correct : false},
+            { text : "Manhattan", correct : false},
             { text : "Rapture", correct : true},
             { text : "Winnenden", correct : false}
         ]
@@ -46,7 +46,7 @@ const questionsB1 = [
         ]
     },
     {
-        question : "What grants the player super-human powers?",
+        question : "What grants the player superhuman powers?",
         answers : [
             { text : "The bible", correct : false},
             { text : "Plasmids", correct : true},
@@ -123,7 +123,7 @@ const questionsB1 = [
             { text : "These are his real family names", correct : false},
             { text : "They were employees in a pub", correct : false},
             { text : "A Stage play by Sander Cohen", correct : true},
-            { text : "These are Andrew Ryans parents", correct : false}
+            { text : "These are Andrew Ryan's parents", correct : false}
         ]
     },
     {
@@ -180,7 +180,7 @@ const questionsB2 = [
             { text : "They are all born from the same mother", correct : true},
             { text : "They are highly aggressive", correct : false},
             { text : "They can use plasmids due to being little sisters once", correct : false},
-            { text : "They kidnap girls from the uppwer world and turn them into little sisters", correct : false}
+            { text : "They kidnap girls from the upper world and turn them into little sisters", correct : false}
         ]
     },{
         question : "How does Subject Delta meet Eleanor Lamb initially?",
@@ -192,20 +192,20 @@ const questionsB2 = [
         ]
     },
     {
-        question : "What is rapture's family?",
+        question : "What is Rapture's Family?",
         answers : [
             { text : "Sofia Lamb's cult", correct : true},
             { text : "Rapture's social agency", correct : false},
-            { text : "a kindergarden in Rapture", correct : false},
+            { text : "a kindergarten in Rapture", correct : false},
             { text : "a famous jazz band", correct : false}
         ]
     },
     {
         question : "How did Eleanor become a Little Sister?",
         answers : [
-            { text : "Andrew Ryan took her away froom her mother to punish her", correct : false},
+            { text : "Andrew Ryan took her away from her mother to punish her", correct : false},
             { text : "She was sold to one of Fontaines orphanages by a caregiver", correct : true},
-            { text : "She ran away because her moother was too strict", correct : false},
+            { text : "She ran away because her mother was too strict", correct : false},
             { text : "Sofia Lamb sold her to get money for her cult", correct : false}
         ]
     },
@@ -222,7 +222,7 @@ const questionsB2 = [
         question : "How does Sofia Lamb capture Subject Delta?",
         answers : [
             { text : "By a shot to his head from behind", correct : false},
-            { text : "By smoothering Eleanor and stoping her hart", correct : true},
+            { text : "By smothering Eleanor and stoping her hart", correct : true},
             { text : "By turning Eleanor against him", correct : false},
             { text : "By flooding Rapture completely", correct : false}
         ]
@@ -248,7 +248,7 @@ const questionsB2 = [
     {
         question : "What happened to August Sinclair in the last part of the game?",
         answers : [
-            { text : "Sofia Lamb made tranformed him into Subject Omega", correct : true},
+            { text : "Sofia Lamb made transformed him into Subject Omega", correct : true},
             { text : "He was forced to marry Sofia Lamb", correct : false},
             { text : "He is completely controlled by Sophia Lamb and can't even speak for himself", correct : false},
             { text : "He decided to never forgive Subject Delta for killing him", correct : false}
@@ -285,10 +285,10 @@ const questionsB3 = [
         ]
     },
     {
-        question : "What is the city called in which Bioshock Infiinite takes place?",
+        question : "What is the city called in which Bioshock Infinite takes place?",
         answers : [
             { text : "Columbus", correct : false},
-            { text : "Manhatten", correct : false},
+            { text : "Manhattan", correct : false},
             { text : "Columbia", correct : true},
             { text : "Winnenden", correct : false}
         ]
@@ -307,12 +307,12 @@ const questionsB3 = [
         answers : [
             { text : "By a boat ride from the Lutece twins", correct : true},
             { text : "By a plane ride from the Lutece twins ", correct : false},
-            { text : "By a ride from Songbirg", correct : false},
+            { text : "By a ride from Songbird", correct : false},
             { text : "By swimming through the ocean", correct : false}
         ]
     },
     {
-        question : "What is Booker DeWitts oficial job?",
+        question : "What is Booker DeWitts official job?",
         answers : [
             { text : "politician", correct : false},
             { text : "slave owner", correct : false},
@@ -353,7 +353,7 @@ const questionsB3 = [
             { text : "Vox Populi", correct : true},
             { text : "Badger Populi ", correct : false},
             { text : "Daisy Fitzroy's gang", correct : false},
-            { text : "Vietkong", correct : false}
+            { text : "Viet Cong", correct : false}
         ]
     },
     {
@@ -395,7 +395,7 @@ const questionsB3 = [
     {
         question : "What famous movie's name appears in one of the tears?",
         answers : [
-            { text : "Scarfacce", correct : false},
+            { text : "Scarface", correct : false},
             { text : "Revenge of the Jedi", correct : true},
             { text : "Shining", correct : false},
             { text : "Grease", correct : false}
@@ -419,7 +419,7 @@ const questionsBAll = [
             { text : "They are all born from the same mother", correct : true},
             { text : "They are highly aggressive", correct : false},
             { text : "They can use plasmids due to being little sisters once", correct : false},
-            { text : "They kidnap girls from the uppwer world and turn them into little sisters", correct : false}
+            { text : "They kidnap girls from the upper world and turn them into little sisters", correct : false}
         ]
     },
     {
@@ -445,7 +445,7 @@ const questionsBAll = [
         answers : [
             { text : "By a boat ride from the Lutece twins", correct : true},
             { text : "By a plane ride from the Lutece twins ", correct : false},
-            { text : "By a ride from Songbirg", correct : false},
+            { text : "By a ride from Songbird", correct : false},
             { text : "By swimming through the ocean", correct : false}
         ]
     },
@@ -463,14 +463,14 @@ const questionsBAll = [
         answers : [
             { text : "Sofia Lamb's cult", correct : true},
             { text : "Rapture's social agency", correct : false},
-            { text : "a kindergarden in Rapture", correct : false},
+            { text : "a kindergarten in Rapture", correct : false},
             { text : "a famous jazz band", correct : false}
         ]
     },
     {
         question : "What happened to August Sinclair in the last part of Bioshock II?",
         answers : [
-            { text : "Sofia Lamb made tranformed him into Subject Omega", correct : true},
+            { text : "Sofia Lamb made transformed him into Subject Omega", correct : true},
             { text : "He was forced to marry Sofia Lamb", correct : false},
             { text : "He is completely controlled by Sophia Lamb and can't even speak for himself", correct : false},
             { text : "He decided to never forgive Subject Delta for killing him", correct : false}
@@ -491,7 +491,7 @@ const questionsBAll = [
             { text : "Vox Populi", correct : true},
             { text : "Badger Populi ", correct : false},
             { text : "Daisy Fitzroy's gang", correct : false},
-            { text : "Vietkong", correct : false}
+            { text : "Viet Cong", correct : false}
         ]
     },
     {
@@ -542,7 +542,7 @@ const questionsBAll = [
     {
         question : "Did Songbird deserve to die?",
         answers : [
-            { text : "No, but sincce he killed Booker...", correct : false},
+            { text : "No, but since he killed Booker...", correct : false},
             { text : "Yes, Elizabeth never showed any connection to him", correct : false},
             { text : "Yes, I hate birds", correct : false},
             { text : "No, he was just a good little, loyal boy", correct : true}
