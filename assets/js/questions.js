@@ -10,7 +10,7 @@ const questionsB1 = [
         ]
     },
     {
-        question : "Who are you playing in Bioshock I?",
+        question : "Who are you playing as in Bioshock I?",
         answers : [
             { text : "James", correct : false},
             { text : "Jack", correct : true},
@@ -222,7 +222,7 @@ const questionsB2 = [
         question : "How does Sofia Lamb capture Subject Delta?",
         answers : [
             { text : "By a shot to his head from behind", correct : false},
-            { text : "By smothering Eleanor and stoping her hart", correct : true},
+            { text : "By smothering Eleanor and stoping her heart", correct : true},
             { text : "By turning Eleanor against him", correct : false},
             { text : "By flooding Rapture completely", correct : false}
         ]
@@ -248,7 +248,7 @@ const questionsB2 = [
     {
         question : "What happened to August Sinclair in the last part of the game?",
         answers : [
-            { text : "Sofia Lamb made transformed him into Subject Omega", correct : true},
+            { text : "Sofia Lamb transformed him into Subject Omega", correct : true},
             { text : "He was forced to marry Sofia Lamb", correct : false},
             { text : "He is completely controlled by Sophia Lamb and can't even speak for himself", correct : false},
             { text : "He decided to never forgive Subject Delta for killing him", correct : false}
@@ -294,7 +294,7 @@ const questionsB3 = [
         ]
     },
     {
-        question : "Who are you mainly playing in Bioshock Infinite ?",
+        question : "Who are you mainly playing as in Bioshock Infinite ?",
         answers : [
             { text : "Zachary Hale Comstock", correct : false},
             { text : "Booker DeWitt", correct : true},
@@ -423,7 +423,7 @@ const questionsBAll = [
         ]
     },
     {
-        question : "Who are you playing in Bioshock I?",
+        question : "Who are you playing as in Bioshock I?",
         answers : [
             { text : "James", correct : false},
             { text : "Jack", correct : true},
@@ -432,7 +432,7 @@ const questionsBAll = [
         ]
     },
     {
-        question : "Who are you mainly playing in Bioshock Infinite ?",
+        question : "Who are you mainly playing as in Bioshock Infinite ?",
         answers : [
             { text : "Zachary Hale Comstock", correct : false},
             { text : "Booker DeWitt", correct : true},
@@ -470,7 +470,7 @@ const questionsBAll = [
     {
         question : "What happened to August Sinclair in the last part of Bioshock II?",
         answers : [
-            { text : "Sofia Lamb made transformed him into Subject Omega", correct : true},
+            { text : "Sofia Lamb transformed him into Subject Omega", correct : true},
             { text : "He was forced to marry Sofia Lamb", correct : false},
             { text : "He is completely controlled by Sophia Lamb and can't even speak for himself", correct : false},
             { text : "He decided to never forgive Subject Delta for killing him", correct : false}

@@ -29,9 +29,9 @@ let countdownBarWidth = 100;
 
 
 //adaptation of https://www.w3schools.com/howto/howto_css_modals.asp
-// Get the modal & button that opens the modal
-// When the user clicks on the button, open the modal
-//kann ich hier nicht einfach so ähnlich wi unten machen mit if id=="" then?
+/**
+ * make modal visible when clicking the according button
+ */
 for (let i = 0; i<btn.length; i++){
     btn[i].onclick = function() {
         clearInterval(timerCounter);
@@ -81,21 +81,22 @@ window.onclick = function(event) {
 
 
 // used https://www.youtube.com/watch?v=PBcqGxrr9g8&t=14s to get to know the basic structure
-// of how to implement content for questions
-// and load it to the website, then working on my own on it
+// of how to implement content for questions and answers of a quiz in Javascript
+// and load it to the website, then configurated it
 
-// content for questions and their answers
-
-
-// function to set up game
+/**
+ * setting up the game
+ */
 function setUp(){
     questionsAsked = 0; 
-    score = 0; //same as above --> can vllt ne extra reset function machen um das zu umgehen
+    score = 0; 
     containerScore.innerHTML= "";
     runGame();
 }
 
-// function to start the game
+/**
+ * starting the game with its content (running it)
+ */
 function runGame () {
     
     // listener to fix bug of wrong question-left counter and resetting timer when pressing enter or spacebar
@@ -109,20 +110,20 @@ function runGame () {
 
     rebootGame();
     next.style.display = "none";
-    // create variable for active question being asked which will change witht the progress of the game
+    // create variable for active question being actively asked
     let activeQuestion = questions[questionsAsked];
     // create variable which will add 1 to the question asked, when using it below for the inner HTML the question counter will start with a 1
     let nrQuestion =  questionsAsked + 1 ;
 
 
-    // will change inner html to the question with the index of questionAsked to the inner HTML of the question element & how many question are left (maybe delete the firstr?)
+    // will change inner html to the question with the index of questionAsked to the inner HTML of the question element & how many question are left
     questionToAsk.innerHTML = nrQuestion + ". " + activeQuestion.question;
     numberOfQuestions -= 1;
     questionContainer.innerHTML = "Questions left: " + numberOfQuestions;
     runTimer(20);
     runCountdownBar(100);
 
-    // used the following instrudctions for the Fisher-Yates Shuffle to be able to shuffle answers https://medium.com/@khaledhassan45/how-to-shuffle-an-array-in-javascript-6ca30d53f772
+    // used the following instructions for the Fisher-Yates Shuffle to be able to shuffle answers https://medium.com/@khaledhassan45/how-to-shuffle-an-array-in-javascript-6ca30d53f772
     const forAnswerShuffle = activeQuestion.answers;
     for (let i = forAnswerShuffle.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -131,14 +132,11 @@ function runGame () {
 
     // create new buttons for answers
     activeQuestion.answers.forEach(answer => {
-        // kann ich hier nicht einfach gleich den Value in die bestehende buttons geben? unbedingt testen sobald das gelernte erst funktionen, wäre dann kürzer & vllt einfacher zu verstehen!!!!!!!!!!
-        
-        // create a new button variable 
+        // new button variable 
         const button = document.createElement("button");
         // add the answer value from question-object to each button
         button.innerHTML = answer.text;
         // add same classes as other classes for styling
-        // wenn ich es hinbekomme den Schritt zu umgehen, dann das alles löschen !!!!!
         button.classList.add("btn");
         button.classList.add("in-game-btn");
         // add created answer button
@@ -152,12 +150,14 @@ function runGame () {
     });
 
     // when next button is clicked next question will be asked
-    // in runGame body since it went through the question wrong on its own
+    // in runGame body since it went through the question wrong as its own function
     next.addEventListener("click", nextQuestion);
 
 }
 
-// function to reboot answers of game in case player wants to start over and will remove additional answer-buttons when running the game
+/**
+ * reboot answers of game in case player wants to start over and will remove additional answer-buttons when running the game
+ */
 function rebootGame() {
     // as long as the answer-elements have a child they will be rebooted
     while(answerOption.firstChild){
@@ -165,14 +165,15 @@ function rebootGame() {
     }
 }
 
-// function to check the answer the player clicked
+/**
+ * check the answer based on answer the player chose/clicked
+ */
 function checkAnswer(userAnswer) {
     clearInterval(timerCounter);
     clearInterval(barCounter);
     // add variables for the answer the player chose and for the correct answer option from the option's/button's data
     const chosenAnswer = userAnswer.target;
-    //const correctAnswer = chosenAnswer.dataset.correct === "true";
-    // check if chosen answer is correct, versuche es gleich in dem if statement zu machen !!!!
+    // check if chosen answer is correct
     if (chosenAnswer.dataset.correct === "true"){
         // add class to make  it easier to style
         chosenAnswer.classList.add("true-answer");
@@ -180,7 +181,7 @@ function checkAnswer(userAnswer) {
         chosenAnswer.classList.add("false-answer");
     }
 
-    //player can only chose one button, for each button it will be checked if the dataset is true
+    //player can only choose one button, for each button it will be checked if the dataset is true
     // when player chose wrong the correct answer will be highlighted as well
     Array.from(answerOption.children).forEach(button => {
         if(button.dataset.correct === "true"){
@@ -194,7 +195,9 @@ function checkAnswer(userAnswer) {
     incrementScore (userAnswer);
 }
 
-// function to increase value of score when answering correct
+/**
+ * increase value of scorw based on the answer chosen by the user and whether it's correct
+ */
 function incrementScore (userAnswer) {
     const chosenAnswer = userAnswer.target;
     if (chosenAnswer.dataset.correct === "true"){
@@ -203,9 +206,11 @@ function incrementScore (userAnswer) {
     containerScore.innerHTML= "Score: " + score;
 }
 
-// function to go to next question and increase question nr
+/**
+ * go to the next question based on which question has already been asked and either running game with data from next question or ending the game
+ */
 function nextQuestion(questionAsked) {
-    // checks if there are still questions left, if there are
+    // checks if there are still questions left
     if (questionsAsked === 14) {
         modal.style.display = "none";
         endOfGameContainer.style.display = "flex";
@@ -221,17 +226,14 @@ function nextQuestion(questionAsked) {
             window.location.replace("index.html");
         })
     } else if  (questionsAsked < questions.length){
-        //take out if everything works
-        //alert(questionsAsked);
         questionsAsked ++;
-        //take out if everything works
-        //alert(questionsAsked);
         if (questionsAsked<questions.length){
             clearInterval(timerCounter);
             clearInterval(barCounter);
             runGame();
         }
     } else {
+        // is double since it created buggs when testing the game
         modal.style.display = "none";
         endOfGameContainer.style.display = "flex";
         endOfGameContainer.style.justifyContent = "center";
@@ -248,9 +250,10 @@ function nextQuestion(questionAsked) {
     }
 }
 
-// function to show timer of 20 seconds, set function insdie function as it won't work otherwise
-// still dont like how at the beginning it still shows the seconds before it kp
 // used several info-pages for the timer functions: https://javascript.info/settimeout-setinterval, https://www.shecodes.io/athena/52336-how-to-create-a-countdown-timer-in-javascript & https://www.youtube.com/watch?v=JRevaOwNKTI
+/**
+ *  creating timer based on the time to answer (20)
+ */
 function runTimer (timeToAnswer) {
     timerCounter = setInterval(() => {
         seconds.innerHTML = timeToAnswer;
@@ -262,7 +265,9 @@ function runTimer (timeToAnswer) {
     , 1000);
 }
 
-// function to stop timer after the time is uo
+/**
+ * stopping the timer after the time is up
+ */
 function timesUp(){
     seconds.innerHTML = "0";
     Array.from(answerOption.children).forEach(button => {
@@ -276,10 +281,10 @@ function timesUp(){
     next.style.display = "block";
 }
 
-// function to decrease countdown bar
-
-// hilfe hier https://www.w3schools.com/howto/howto_js_progressbar.asp
-
+// based on https://www.w3schools.com/howto/howto_js_progressbar.asp
+/**
+ * creating countdown bar based on its with that will run down with time passing
+ */
 function runCountdownBar(countdownBarWidth){
     barCounter = setInterval(() => {
         if (countdownBarWidth > 0){
