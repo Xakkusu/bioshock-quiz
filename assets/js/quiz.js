@@ -49,8 +49,8 @@ for (let i = 0; i<btn.length; i++){
         modal.style.display = "flex";
         modal.style.justifyContent = "center";
         modal.style.alignItems = "center";
-    }
-};
+    };
+}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -217,14 +217,14 @@ function nextQuestion(questionAsked) {
         endOfGameContainer.style.justifyContent = "center";
         endOfGameContainer.style.alignItems = "center";
         finishSentence.innerHTML = `Congrats, ${localStorage.getItem("userName")} you finished the quiz!\n
-            Your score: ${score}`
+            Your score: ${score}`;
         //set value pair in local storage as true when game is finished
         localStorage.setItem("finished", true);
         addToLeaderboardBtn.addEventListener("click", function() {
             endScore = score;
             localStorage.setItem("userScore", endScore);
             window.location.replace("index.html");
-        })
+        });
     } else if  (questionsAsked < questions.length){
         questionsAsked ++;
         if (questionsAsked<questions.length){

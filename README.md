@@ -87,6 +87,12 @@ Interested? Then check it out here: [Bioshock Quiz](https://xakkusu.github.io/bi
 ### Jshint
 ### Links Testing
 ### Browser Testing
+The website was successfully tested on the following browsers:
+- Google Chrome
+- Mozilla Firefox
+- Safari
+- Microsoft Edge
+
 ### Device Testing
 
 - The following websites, besides google dev tools, were used to check responsiveness:
@@ -103,6 +109,22 @@ Interested? Then check it out here: [Bioshock Quiz](https://xakkusu.github.io/bi
 ## TECHNOLOGIES USED
 ### Languages
 ### Frameworks, Libraries and Programs used
+- [Balsamiq](https://balsamiq.com/wireframes/)- Used to create wireframes.
+- [GitHub](https://GitHub.com/) - Used for version control and hosting.
+- [Gitpod](https://gitpod.io/) - IDE to develop the website.
+- [Google Fonts](https://fonts.google.com/) - Used to import  fonts used on website.
+- [FontAwesome](https://fontawesome.com/) - Used for footer's and navbar's icon.
+- [Google Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)- Used for troubleshooting, debugging, inspecting page's elements, testing responsiveness and styling elements.
+- [Favicon.cc](https://www.favicon.cc/) - Used for website's favicon.
+- [Coolors](https://coolors.co/) - Used to create color palette.
+- [Google Chrome's Lighthouse](https://developers.google.com/web/tools/lighthouse) - Used to test performance and accessibility.
+- [Wave](https://wave.webaim.org/) Used to test accessibility.
+- [W3C HTML Markup Validator](https://validator.w3.org/) Used to validate HTML code.
+- [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) Used to validate CSS code.
+- [JSHint](https://jshint.com/)
+- [Am I Responsive](https://ui.dev/amiresponsive) Used to test responsiveness.
+- [Responsinator](http://www.responsinator.com/) Used to verify responsiveness especially usage for mobile devices.
+
 ## DEPLOYMENT
 The steps to deploy this project using GitHub pages were the following:
 1. Go to the Settings tab of your GitHub repository.
