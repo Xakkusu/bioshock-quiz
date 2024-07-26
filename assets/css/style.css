@@ -84,7 +84,7 @@ th {
     padding: 0 10px;
 }
 
-/* general button styling */
+/* general button styling*/
 .btn {
     padding: 2px 10px;
     font-family: "Didact Gothic", sans-serif;
@@ -116,7 +116,7 @@ th {
     margin: auto;
 }
 
-/* undesrtood the whole border image concept through the following video: https://www.youtube.com/watch?v=ypstT5UfCsk*/
+/* understood the whole border image concept through the following video: https://www.youtube.com/watch?v=ypstT5UfCsk*/
 .quiz-body{
     width: 93%;
     height: 60%;
@@ -131,7 +131,6 @@ th {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /*background-color: #084139ef;*/
     margin: 0;
     padding: 20px;
 }
@@ -158,16 +157,13 @@ th {
     line-height: 23px;
 }
 
-/* when text input is fucesd its border will change */
-
+/* when text input is focused its border will change */
 #name-of-player:focus {
     outline-color: #084139;
     border: #084139;
 }
 
-/* do detailed styling, box shadow + hover-effect of buttons -> seperate effect for in-game-buttons */
-/* using modal for buttons
-got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
+/* using modal for buttons; got basic understanding of it from: https://www.w3schools.com/howto/howto_css_modals.asp */
 .hidden{
     display: none;
     position: fixed;
@@ -284,7 +280,7 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
     padding-top: 8px;
 }
 
-/* make score & questions left appear */
+/* make score & questions-left appear */
 #score-and-questions-left-container {
     display: flex;
     justify-content: space-between;
@@ -318,7 +314,6 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
 }
 
 /* next button to be styled and centered */
-
 #container-next{
     display: flex;
     justify-content: center;
@@ -354,7 +349,7 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
 
 /* will only work on non disabled buttons */
 .btn:hover:not([disabled]){
-
+    cursor: pointer;
 }
 
 /* to give visual hint that buttons are no longer selectable */
@@ -363,7 +358,6 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
 }
 
 /* time-bar visualization for the countdown timer */
-
 #countdown-bar > p {
     white-space: nowrap;
     padding: 2px 10px;
@@ -380,7 +374,6 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
 
 #countdown-bar {
     width: 100%;
-    /*background: linear-gradient(to tomato, #e26882, #f3f3f3);*/
     background-image: linear-gradient(#33391E , #1C3124, #475715, #1C3124, #33391E);
     border-radius: 5px;
     transition: 0.5s ease;
