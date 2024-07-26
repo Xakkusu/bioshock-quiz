@@ -236,7 +236,8 @@ got code from: https://www.w3schools.com/howto/howto_css_modals.asp */
 }
 
 #finish-sentence,
-#would-you-kindly {
+#would-you-kindly,
+#text-404 {
     color: #C0A557;
     font-weight: 600;
     font-size: 1.1rem;
