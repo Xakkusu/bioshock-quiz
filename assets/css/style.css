@@ -443,6 +443,12 @@ th {
         min-height: 40px;
     }
 
+    #choose-b1 > p, 
+    #choose-b2 > p,
+    #choose-b3 > p {
+        font-size: 1.17em;
+    }
+
     #name-of-player {
         width: 270px;
         font-size: 1.2rem;

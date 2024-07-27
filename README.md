@@ -69,6 +69,42 @@ Interested? Then check it out here: [Bioshock Quiz](https://xakkusu.github.io/bi
 
 
 ## WIREFRAMES
+Wireframes were produced using Balsamiq. 
+
+ <details>
+
+ <summary>Desktop Wireframe</summary>
+Index Page:
+
+<img src="" width="90%" alt="Desktop Index Wireframe">
+
+Quiz Page:
+
+<img src="" width="90%" alt="Desktop Quiz Wireframe">
+
+404 Page:
+
+<img src="" width="90%" alt="Desktop 404 Wireframe">
+
+ </details>
+
+ <details>
+    <summary>Mobile Wireframe</summary>
+
+Index Page:
+
+<img src="" width="50%" alt="Mobile Index Wireframe">
+
+Quiz Page:
+
+<img src="" width="50%" alt="Mobile Quiz Wireframe">
+
+404 Page:
+
+<img src="" width="50%" alt="Mobile 404 Wireframe">
+
+</details>
+
 ## FINAL DESIGN
 ### Imagery
 ### Color Scheme
@@ -76,6 +112,10 @@ Interested? Then check it out here: [Bioshock Quiz](https://xakkusu.github.io/bi
 ### Visual Effects
 ### Final Look
 ## FEATURES
+All pages have the following in common:
+#### Favicon
+<img src="" alt="favicon in browser tab">
+
 ### Index Page
 ### Quiz Page
 ### 404 Page
@@ -121,7 +161,7 @@ The website was successfully tested on the following browsers:
 - [Wave](https://wave.webaim.org/) Used to test accessibility.
 - [W3C HTML Markup Validator](https://validator.w3.org/) Used to validate HTML code.
 - [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) Used to validate CSS code.
-- [JSHint](https://jshint.com/)
+- [JSHint](https://jshint.com/) Used to test all Javascript code.
 - [Am I Responsive](https://ui.dev/amiresponsive) Used to test responsiveness.
 - [Responsinator](http://www.responsinator.com/) Used to verify responsiveness especially usage for mobile devices.
 
