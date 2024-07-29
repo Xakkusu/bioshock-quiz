@@ -107,9 +107,79 @@ The Background image was chosen to represent all three games. From the underwate
 An Artdeco style for the main content boxes were chosen to be in line with Bioshock I and II Artdeco styling of its in-game-world and its menu styling.
 
 ### Color Scheme
+![Bioshock Quiz Color Palette](docs/readme-images/bioshock-color-scheme.png)
+The main colors consist out of darker green colours as well es brighter gold and silver colors for highlights. Other minor colors were mainly used for gradient styling of buttons and the countdown bar. All colors are in line with the colors of the games so the user will be familiar with the color palette and connect the quiz to the games just by the look of it. The only colors of this scheme that stand out are the red and green colors chosen for wrong and right answers in the quiz. However, as brighter colours in Bioshock Infinite are in pastel tones I chose a pastel tones for these two colors as well to again stay in line of the games colour scheme.
+
+The color palette was created by using the [coolors](https://coolors.co/) website.
+
 ### Typography
+[Google Fonts](https://fonts.google.com/) was used for the following fonts:
+- ![Limelight font image](docs/readme-images/limelight-font.png) 
+[Limelight](https://fonts.google.com/specimen/Limelight?query=Limelight) was chosen for all the headings to set them apart from the other content. The font was chosen as it closely resembles some fonts used in the games, therefore it stays in line of the game's styling.
+- ![Didact Gothic font image](docs/readme-images/didact-gothic-font.png) 
+[Didact Gothic](https://fonts.google.com/specimen/Didact+Gothic?query=Didact+Gothic) was used for all the other text elements as it is easy to read and still resembles some fonts used in the Bioshock games.
+- Sans Serif was chosen as a backup font, in case for any reason the main font isn't being imported into the site correctly.
+
 ### Visual Effects
+Images and more information for these effects are given below in the [Features](#features) part.
+#### Shadows
+All elements that are shown in content boxes have a shadow to differentiate them either from the background image or from its content part that lay below it (e.g.: when clicking outside the game box while playing it).
+#### Buttons Hover Effect
+On larger screens when placing the mouse above any kind of button a hover-effect will appear. The shadow will change its opacity and color to a brighter gold to make it stand out. The cursor will become a pointer as well, unless it its in the quiz section and an answer has already been chosen.
+#### Answer Buttons Wrong/Right
+When the user chose an answer the right answer will change colors to green, the wrong to a red both with a silver font color to easily indicate which is wrong and which would have been correct. 
+#### Next Button
+In the quiz section the next button will only appear after the user chose an answer.
+#### Countdown Bar
+In the quiz section there is a time-bar to indicate to the user the decreasing time to answer each question.
+
 ### Final Look
+<details>
+<summary>Desktop</summary>
+
+Index Page:
+
+<img src="docs/final-look/desktop-final-look-index1.html.png" width="90%" alt="Desktop Index Page">
+<img src="docs/final-look/desktop-final-look-index2.html.png" width="90%" alt="Desktop Index How To Play Page">
+<img src="docs/final-look/desktop-final-look-index3.html.png" width="90%" alt="Desktop Index Leaderboard Page">
+
+Quiz Page:
+
+<img src="docs/final-look/desktop-final-look-quiz1.html.png" width="90%" alt="Desktop Quiz Page">
+<img src="docs/final-look/desktop-final-look-quiz2.html.png" width="90%" alt="Desktop Quiz Answers Page">
+<img src="docs/final-look/desktop-final-look-quiz3.html.png" width="90%" alt="Desktop Quiz Game Pause Page">
+<img src="docs/final-look/desktop-final-look-quiz4.html.png" width="90%" alt="Desktop Quiz End of Game Page">
+
+404 Page:
+
+<img src="docs/final-look/desktop-final-look-404.html.png" width="90%" alt="Desktop 404 Page">
+
+</details>
+
+<details>
+<summary>Mobile</summary>
+
+Index Page:
+
+<img src="docs/final-look/mobile-final-look-index1.html.png" width="50%" alt="Mobile Index Page">
+<img src="docs/final-look/mobile-final-look-index2.html.png" width="50%" alt="Mobile Index How To Play Page">
+<img src="docs/final-look/mobile-final-look-index3.html.png" width="50%" alt="Mobile Index Leaderboard Page">
+
+Quiz Page:
+
+<img src="docs/final-look/mobile-final-look-quiz1.html.png" width="50%" alt="Mobile Quiz Page">
+<img src="docs/final-look/mobile-final-look-quiz2.html.png" width="50%" alt="Mobile Quize Answers Page">
+<img src="docs/final-look/mobile-final-look-quiz3.html.png" width="50%" alt="Mobile Quiz Game Pause Page">
+<img src="docs/final-look/mobile-final-look-quiz4.html.png" width="50%" alt="Mobile Quiz End of Game Page">
+
+404 Page:
+
+<img src="docs/final-look/mobile-final-look-404.html.png" width="50%" alt="Mobile 404 Page">
+
+Get Connected Page:
+
+</details>
+
 ## FEATURES
 All pages have the following in common:
 #### Favicon
