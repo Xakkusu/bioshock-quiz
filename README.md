@@ -75,16 +75,13 @@ Wireframes were produced using Balsamiq.
 
  <summary>Desktop Wireframe</summary>
 Index Page:
-
-<img src="" width="90%" alt="Desktop Index Wireframe">
+<img src="docs/wireframes/index-page-desktop.png" alt="Desktop Index Wireframe">
 
 Quiz Page:
-
-<img src="" width="90%" alt="Desktop Quiz Wireframe">
+<img src="docs/wireframes/quiz-page-desktop.png" alt="Desktop Quiz Wireframe">
 
 404 Page:
-
-<img src="" width="90%" alt="Desktop 404 Wireframe">
+<img src="docs/wireframes/404-page-desktop.png" alt="Desktop 404 Wireframe">
 
  </details>
 
@@ -92,21 +89,23 @@ Quiz Page:
     <summary>Mobile Wireframe</summary>
 
 Index Page:
-
-<img src="" width="50%" alt="Mobile Index Wireframe">
+<img src="docs/wireframes/index-page.png" alt="Mobile Index Wireframe">
 
 Quiz Page:
-
-<img src="" width="50%" alt="Mobile Quiz Wireframe">
+<img src="docs/wireframes/quiz-page.png" alt="Mobile Quiz Wireframe">
 
 404 Page:
 
-<img src="" width="50%" alt="Mobile 404 Wireframe">
+<img src="docs/wireframes/404-page.png" width="50%" alt="Mobile 404 Wireframe">
 
 </details>
 
 ## FINAL DESIGN
 ### Imagery
+The imagery as well as the colour scheme were chosen to be as in synch with Bishock's main theme, especially menu looks, as possible. This is of great importance so the user will quickly associate its looks and design with the common themes in the game. This was done to be in line with all three games, however since two of the three games have a greatly different tone than Bioshock II the former dominated the most decisions.
+The Background image was chosen to represent all three games. From the underwater world to the city in the clouds everything should be included for the main look  so the theme is easy to conntect with the games and is credited below.
+An Artdeco style for the main content boxes were chosen to be in line with Bioshock I and II Artdeco styling of its in-game-world and its menu styling.
+
 ### Color Scheme
 ### Typography
 ### Visual Effects

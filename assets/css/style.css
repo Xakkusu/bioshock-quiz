@@ -116,7 +116,7 @@ th {
     margin: auto;
 }
 
-/* understood the whole border image concept through the following video: https://www.youtube.com/watch?v=ypstT5UfCsk*/
+/* understood border image concept through this video: https://www.youtube.com/watch?v=ypstT5UfCsk*/
 .quiz-body{
     width: 93%;
     height: 60%;
@@ -163,7 +163,7 @@ th {
     border: #084139;
 }
 
-/* using modal for buttons; got basic understanding of it from: https://www.w3schools.com/howto/howto_css_modals.asp */
+/* using modal for buttons; got basic understanding from: https://www.w3schools.com/howto/howto_css_modals.asp */
 .hidden{
     display: none;
     position: fixed;
