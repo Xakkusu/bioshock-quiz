@@ -176,16 +176,65 @@ Quiz Page:
 
 <img src="docs/final-look/mobile-final-look-404.html.png" width="50%" alt="Mobile 404 Page">
 
-Get Connected Page:
-
 </details>
 
 ## FEATURES
+The Bioshock Quiz consists of the landing page (index), the quiz page and a 404 error page.
+
 All pages have the following in common:
 #### Favicon
-<img src="" alt="favicon in browser tab">
+<img src="docs/features/favicon-feature.png" alt="favicon in browser tab">
+
+#### Heading and Logo
+<img src="docs/features/logo-feature.png" alt="logo and heading">
+
+- Is a link, can be clicked and will redirect the user to the landing page.
+
+#### Button Hover Effect
+<img src="" alt="cursor going over buttons">
+
+- Only on larger screens when placing the mouse above a button the shadow will change color and have a higher opacity. 
+- The cursor will change to a pointer as well
+- This is done to indicate to the user that something is different and can be clicked compared to the other content.
 
 ### Index Page
+![Index Content](docs/features/main-index-feature.png)
+- The landing page has a simple design that is similar to various quiz websites as well as, due to its design, is similar to other Bioshock content.
+- The section is made up out of the Logo, an input field and 4 buttons that are selectable by the user.
+
+#### Name Input and Start Game field
+![Input field and Let's play Button](docs/features/name-input-feature.png)
+- The user has to input a name in order to start the quiz.
+- The user can start the quiz after entering the name either by pressing the "Enter" key or selecting the "Let's Play"- Button by being directed to the quiz.html.
+
+![Input field and Let's play Button](docs/features/alert-name-feature.png)
+- If the user tries to start the quiz without entering a name the alert: "Enter a name to start" is shown. This is done to prevent starting a game without leaving a name first.
+
+![Input field and Let's play Button focused](docs/features/name-input-focus-feature.png)
+- When focused the input field's border will change color so the user will know better that they can enter a name now.
+
+![Message after entering the name](docs/features/alert-start-feature.png)
+- After entering a name and submitting it via the button a message appears: "Hi XY let the game begin".
+- This is done only via button because if the user will be on his mobile device entering their name via the enter key, I did not want more things than necessary on a smaller screen so they will be directly directed to the quiz page.
+
+#### How to Play - Pop-Up
+![How to Play Pop-Up field](docs/features/how-to-play-feature.png)
+- If the user selects the "How to Play?" button an instruction-section will appear.
+- The user is informed through this on how the game works and how to navigate the quiz-website overall.
+- The user can select the "return"-button anytime they like to return to the landing page. The user could also click on the greyed out part outside of the section to go back to the landing page.
+
+#### Leaderboard - Pop-Up 
+![Leaderboard field](docs/features/leaderboard-feature.png)
+- If the user selects the "Leaderboard" button an leaderboard-section will appear.
+- The user will see either an empty leaderboard or if the played before the will see their name and if the back then dedcided to save the score the score will also be shown.
+- The user can select the "return"-button anytime they like to return to the landing page. The user could also click on the greyed out part outside of the section to go back to the landing page.
+
+
+#### Need more knowledge Button 
+![Button to an external website](docs/features/knowledge-feature.png)
+- Of the user selects the "Need more knowldge button" they will be transfered to the [Bioshock Wiki](https://bioshock.fandom.com/wiki/BioShock_Wiki) in an external tab.
+- Here they can look up whatever they think they lack knowledge in.
+
 ### Quiz Page
 ### 404 Page
 ### Future Features
