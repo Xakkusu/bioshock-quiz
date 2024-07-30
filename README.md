@@ -293,14 +293,101 @@ All pages have the following in common:
 
 ### 404 Page
 ![404 Page](docs/features/404-feature.png)
+- When an error occurs or a wrong input is given to the url the 404-page will shop up with the information on how to be redirected to the landing page.
 
 ### Future Features
-- good Database for scoreboard
+- Once I gain the knowledge I would like to add the ability to add various game scores to the leaderboard which will be ranked according from highest to lowest score. Yet as I do not know anything about databases and necessary frameworks etc. I do not feel confident enough to just get the code from somewhere about this without being able to 1. understand it completely, 2. do it on my own and 3. it is out of the scope for this project to implement such things. However in the near future this should be an easy task!
+
 ## TESTING
 ### Accessibility
+#### Lighthouse Testing
+##### Mobile
+Index:
+
+<img src="docs/testing/lighthouse-mobile-index.png" width="60%" alt="Lighthouse mobile index rating">
+
+Quiz:
+
+<img src="docs/testing/lighthouse-mobile-quiz.png" width="60%" alt="Lighthouse mobile quiz rating">
+
+404:
+
+<img src="docs/testing/lighthouse-mobile-404.png" width="60%" alt="Lighthouse mobile 404 rating">
+
+##### Desktop
+Index:
+
+<img src="docs/testing/lighthouse-desktop-index.png" width="60%" alt="Lighthouse desktop index rating">
+
+Quiz:
+
+<img src="docs/testing/lighthouse-desktop-quiz.png" width="60%" alt="Lighthouse desktop quiz rating">
+
+404:
+
+<img src="docs/testing/lighthouse-desktop-404.png" width="60%" alt="Lighthouse desktop 404 rating">
+
+#### Wave Testing
+##### Index Page
+
+<img src="docs/testing/wave-index.png" alt="Wave index rating" width="40%">
+
+<details>
+<summary>Error</summary>
+Error shows a missing form label, even though form label is there it is just hidden as the placeholder explains what should be done with the input element.
+
+<img src="docs/testing/wave-index-error.png" alt="code with form label">
+</details>
+
+##### Quiz Page
+
+<img src="docs/testing/wave-quiz.png" alt="Wave quiz rating" width="40%">
+
+##### 404 Page
+
+<img src="docs/testing/wave-404.png" alt="Wave 404 rating" width="40%">
+
 ### W3C Validators
+#### HTML
+No errors were returned for all pages from the W3C Markup Validator:
+
+- [Index Page HTML-validator results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fxakkusu.github.io%2Fbioshock-quiz%2Findex.html)
+
+- [Quiz Page HTML-validator results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fxakkusu.github.io%2Fbioshock-quiz%2Fquiz.html)
+
+- [404 Page HTML-validator results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fxakkusu.github.io%2Fbioshock-quiz%2F404)
+
+#### CSS
+No errors were returned for the CSS stylesheet from the W3C CSS Validator:
+
+- [Stylesheet CSS-validator results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fxakkusu.github.io%2Fbioshock-quiz%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
 ### JShint
+[JSHint](https://jshint.com/) was used to validate the JavaScript.
+<details>
+<summary>script.js</summary>
+No errors or warnings.
+
+<img src="docs/testing/jshint-script.png" alt="script.js JSHint result">
+</details>
+<details>
+<summary>quiz.js</summary>
+No errors. Warnings about semantics that could be confusing, however, as these variables concern variables from another JS-file they do exist due to their size they are just stored in the questions.js
+
+<img src="docs/testing/jshint-quiz.png" alt="quiz.js JSHint result">
+</details>
+<details>
+<summary>questions.js</summary>
+No errors or warnings.
+
+<img src="docs/testing/jshint-question.png" alt="questions.js JSHint result">
+</details>
+
 ### Links Testing
+- All internal links are working and redirecting the user to the pages they are meant to redirect them to. 
+- All external links are working and redirecting, through a separate tab, the user to the external website they are meant to be redirected to.
+
+
 ### Browser Testing
 The website was successfully tested on the following browsers:
 - Google Chrome
@@ -309,6 +396,8 @@ The website was successfully tested on the following browsers:
 - Microsoft Edge
 
 ### Device Testing
+- This website was viewed and tested on various devices such as smartphones (Iphone X, Huawei P40 Pro+), laptops and desktops to guarantee that it is responsive for several screen sizes. Full successful testing was performed on all of the devices.
+
 
 - The following websites, besides google dev tools, were used to check responsiveness:
     - [Am I Responsive - Index Page](https://ui.dev/amiresponsive?url=https://xakkusu.github.io/bioshock-quiz/index.html)
@@ -319,10 +408,50 @@ The website was successfully tested on the following browsers:
     - [Responsinator - 404 Page](http://www.responsinator.com/?url=xakkusu.github.io%2Fbioshock-quiz%2F404.html)
 
 ### User Stories Testing
+#### First Time User Goals
+- I want to take a Bioshock quiz to test my knowledge
+
+    The quiz test the user's knowledge from simple questions up to questions that only die-hard fans can answer.
+- I want to understand the website, its structure and how to take the quiz
+
+    Through the common structure found in various quiz games most users should be already familiar with the webiste's set up. However, through the "How to Play?" Content the whole process of the game is easily explained step by step.
+- I want the quiz to be easy to use and navigat
+
+    All buttons, input field and text is written in large easy to understand fonts as well as simple langugae, as the website does not want the user to be overwhelmed when being tested about their knowledge. The user can return via return buttons or via clicking outside of pop-up windows which is explained in the How to Play section.
+- I want to take the quiz whenever, whereever.
+
+    The user can play the game whenever they like on whichever device they like, as long as they have internet connection.
+- I want to take the test on whichever device
+
+    The user can play the game whenever they like on whichever device they like, as long as they have internet connection.
+
+#### Returning User Goals
+- I want to be able to choose between different types of quizes
+
+    The user can chose between quizes about Bioshock I to III or all of them however many times they want to.
+- I want to be able to improve my knowledge of the Bioshock series
+
+    If the user wants to learn more outside of the questions they can do so by choosing the "Need more knowledge?"-button on the landing page. They will be redirected to the Bioshock-Wiki where pretty much all important information about the games is stored.
+
+#### Frequent User Goals
+- I want to be able to choose between different types of quizes
+
+    The user can chose between quizes about Bioshock I to III or all of them however many times they want to.
+- I want to be able to improve my knowledge of the Bioshock series
+
+    If the user wants to learn more outside of the questions they can do so by choosing the "Need more knowledge?"-button on the landing page. They will be redirected to the Bioshock-Wiki where pretty much all important information about the games is stored.
+- I want to be able to see my score of the quiz outside of taking the quiz
+
+    The user's score can be saved in the scoreboard if they choose to do so, otherwise only the name will be stored.
+
 ### Fixed Bugs
 ### Known Bugs
 ## TECHNOLOGIES USED
 ### Languages
+- HTML
+- CSS
+- JavaScript
+
 ### Frameworks, Libraries and Programs used
 - [Balsamiq](https://balsamiq.com/wireframes/)- Used to create wireframes.
 - [GitHub](https://GitHub.com/) - Used for version control and hosting.

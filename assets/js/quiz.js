@@ -23,9 +23,7 @@ let numberOfQuestions = 15;
 // number of questions asked, will serve as an index of the questions object
 let timerCounter;
 let questionsAsked = 0;
-let timeToAnswer = 20;
 let barCounter;
-let countdownBarWidth = 100;
 
 
 //adaptation of https://www.w3schools.com/howto/howto_css_modals.asp
@@ -261,8 +259,8 @@ function runTimer (timeToAnswer) {
         if (timeToAnswer < 0){
             clearInterval(timerCounter);
             timesUp();
-        }}
-    , 1000);
+        }
+    }, 1000);
 }
 
 /**

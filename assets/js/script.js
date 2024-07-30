@@ -1,6 +1,5 @@
 let namePlayer = document.getElementById("name-of-player");
 const letsPlayBtn = document.getElementById("quiz-button");
-const form = document.getElementById("save-player-name");
 const leaderboardName = document.getElementsByClassName("namePlayer");
 const leaderBoardGame = document.getElementsByClassName("scorePlayer");
 
