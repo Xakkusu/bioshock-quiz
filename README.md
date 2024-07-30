@@ -445,6 +445,22 @@ The website was successfully tested on the following browsers:
     The user's score can be saved in the scoreboard if they choose to do so, otherwise only the name will be stored.
 
 ### Fixed Bugs
+1. Questions were shown incorrectly, not one after another, but either jumped straight to the end or showed only three questions and then the last.
+    - up to then the next-button's eventListener (for a "click") was in its own function, I put in the runGame()-function and had it execute the function which was on its own before.
+    - didn't do this before as I thought it would be better in case I would need this function somewhere else.
+
+2.  The questions after some time jumped from 1 to 2 to 4 to 8 to 15. 
+    - put in various alerts for the questionsAsked variable to see its current value in the console while debugging
+    - found out while incrementing it there was a bug, as well as giving the above mentioned event listener an exteral function through which I could better test where the problem was
+    - this new function I gave the questionAsked variable as parameters and later as an argument and after I debugged this function I deleted all relevant alerts
+
+
+3. After deploying the finished quiz, while playing the game the timer, score and questions left would react to the spacebar and enter key, so the would: timer - restart, questions left - substract random numbers between 1-5 and go into the negative & score - add random numbers between 1-5
+    - added eventlisteners for both keys in runGame()-funtction to prevent their default behaviour (as I could not find out what else they were doing I thought preventDefault() would be the safest option)
+    - for spacebar I had to add various event listener events as it still would happen on different browsers/devices, so I took all names for spacebar I was able to find, so this problem could still occur if a browser uses another definition
+ 
+
+
 ### Known Bugs
 ## TECHNOLOGIES USED
 ### Languages
