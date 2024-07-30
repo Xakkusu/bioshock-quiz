@@ -1,4 +1,4 @@
-/* Goofle font import */
+/* Google font import */
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Limelight&display=swap');
 
 /* astric selector to remove default styles */
@@ -91,7 +91,7 @@ th {
     font-weight: 600;
     width: 200px;
     margin: 5px 0;
-    cursor: pointer; /* change to an image? */
+    cursor: pointer; 
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.40) 0 10px 15px;
     color: #D5C27C;
@@ -105,7 +105,7 @@ th {
     font-family: "Didact Gothic", sans-serif;
     font-weight: 600;
     width: 75px;
-    cursor: pointer; /* change to an image? */
+    cursor: pointer; 
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.40) 0 10px 15px;
     color: #33391E;
@@ -116,7 +116,7 @@ th {
     margin: auto;
 }
 
-/* understood border image concept through this video: https://www.youtube.com/watch?v=ypstT5UfCsk*/
+/* understood border image concept through this video: https://www.youtube.com/watch?v=ypstT5UfCsk */
 .quiz-body{
     width: 93%;
     height: 60%;

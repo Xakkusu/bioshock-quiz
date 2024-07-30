@@ -192,7 +192,7 @@ All pages have the following in common:
 - Is a link, can be clicked and will redirect the user to the landing page.
 
 #### Button Hover Effect
-<img src="" alt="cursor going over buttons">
+<img src="docs/readme-images/buttons-hover-effect.gif" alt="cursor going over buttons">
 
 - Only on larger screens when placing the mouse above a button the shadow will change color and have a higher opacity. 
 - The cursor will change to a pointer as well
@@ -268,7 +268,8 @@ All pages have the following in common:
 - After the user selected an answer the selected button will either turn green with a white font or it will turn red and the correct answer will turn green. 
 - This reveal of the correct and false answer is commonly done in quizes and other games to indicte to the user what they have done wrong or correct.
 - The whole section is responsive and will adapt according to screen size. On smaller smartphones and smaller tabletes the answer-buttons will be stacked on top of each other.
-![Answer buttons no-drop](docs/features/quiz-no-click-button.png)
+
+![Answer buttons no-drop](docs/features/non-drop-button.gif)
 - If an answer has been chosen the other ones cannot be selected anymore which is indicated visually as well by the cursor having the no-drop value.
 
 #### Next Button
