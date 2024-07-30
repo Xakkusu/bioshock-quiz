@@ -242,7 +242,7 @@ All pages have the following in common:
 ## TESTING
 ### Accessibility
 ### W3C Validators
-### Jshint
+### JShint
 ### Links Testing
 ### Browser Testing
 The website was successfully tested on the following browsers:
