@@ -22,7 +22,7 @@ Interested? Then check it out here: [Bioshock Quiz](https://xakkusu.github.io/bi
     - [Typography](#typography)
     - [Visual Effects](#visual-effects)
     - [Final Look](#final-look)
-- [FEATURES](#feautures)
+- [FEATURES](#features)
     - [Index Page](#index-page)
     - [Quiz Page](#quiz-page)
     - [404 Page](#404-page)
@@ -30,6 +30,7 @@ Interested? Then check it out here: [Bioshock Quiz](https://xakkusu.github.io/bi
 - [TESTING](#testing)
     - [Accessibility](#accessibility)
     - [W3C Validators](#w3c-validators)
+    - [JSHint](#jshint)
     - [Form Testing](#form-testing)
     - [Links Testing](#links-testing)
     - [Browser Testing](#browser-testing)
@@ -201,6 +202,7 @@ All pages have the following in common:
 ![Index Content](docs/features/main-index-feature.png)
 - The landing page has a simple design that is similar to various quiz websites as well as, due to its design, is similar to other Bioshock content.
 - The section is made up out of the Logo, an input field and 4 buttons that are selectable by the user.
+- The whole section is responsive and will adapt according to screen size. When using a larger smartphone horizontally some of the buttons will appear next to one another instead of being stacked on top of each other.
 
 #### Name Input and Start Game field
 ![Input field and Let's play Button](docs/features/name-input-feature.png)
@@ -236,7 +238,62 @@ All pages have the following in common:
 - Here they can look up whatever they think they lack knowledge in.
 
 ### Quiz Page
+![Quiz main content](docs/features/quiz-feature.png)
+- The quiz page has a nearly identical design to the index page, so the user should already be familiar with how it works.
+- The section is made up out of the Logo and 4 buttons that are selectable by the user. When chosing a button a pop-up with the according quiz will appear.
+- The whole section is responsive and will adapt according to screen size. On smaller smartphones and smaller tabletes the buttons will be stacked on top of each other. When using a larger smartphone horizontally or a larger desktob screen the buttons will appear next to one another in two rows.
+
+#### Game Section Pop-Up
+![Quiz main content](docs/features/quiz-pop-up-feature.png)
+- This section consists out of the quiz itself and only pops up when a game type has been selected.
+- It is made up out of the question, a countdown-bar, a timer, answer-buttons and if certain conditions are fullfilled a score and a next-button.
+
+![Quiz main content mobile](docs/features/quiz-pop-up-mobile-feature.png)
+- The whole section is responsive and will adapt according to screen size. On smaller smartphones and smaller tabletes the answer-buttons will be stacked on top of each other.
+
+#### Timer, Timebar, Questions Left, Score
+![Gama Data Section with no score](docs/features/quiz-game-data-no-score-feature.png)
+- A Timer that counts down from 20 seconds is shown within a countdown bar which also runs down. This indicates to the user in a simple visual way how much time they have left to anser a certain question.
+- A counter how many questions are left to be asked is given as well.
+- When the user has not answered a question correctly only this information is given in this part.
+
+![Gama Data Section with score](docs/features/quiz-game-data-score-feature.png)
+- When the user has answered a question correctly the timer will stop its countdown at this point until the next question will be loaded in. 
+- In this part a score-counter will appear as well. This way the user is always informed about all relevant game-related data.
+
+#### Answers
+![Answer buttons after user chose one](docs/features/quiz-answer-feature.png)
+- The buttons have the same hover-effect as every other button, however they are styled in different colors to set themselves apart from the others. This is done to visually indicate to the user that this part of the website is different than the other parts as it is the quiz itself.
+- The answer's order is random through the Fisher–Yates shuffle.
+- After the user selected an answer the selected button will either turn green with a white font or it will turn red and the correct answer will turn green. 
+- This reveal of the correct and false answer is commonly done in quizes and other games to indicte to the user what they have done wrong or correct.
+- The whole section is responsive and will adapt according to screen size. On smaller smartphones and smaller tabletes the answer-buttons will be stacked on top of each other.
+![Answer buttons no-drop](docs/features/quiz-no-click-button.png)
+- If an answer has been chosen the other ones cannot be selected anymore which is indicated visually as well by the cursor having the no-drop value.
+
+#### Next Button
+![Answers no next button](docs/features/quiz-no-next-btn-feature.png)
+![Answers with next button](docs/features/quiz-next-btn-feature.png)
+- When the user has not selected an answer yet there will be no next button.
+- As soon as the user clicked on an answer-button the next button will appear below the answers. This way the user can only go to the next question after they selected an answer.
+- If the time is up the next button will appear as well as the correct-answer will be shown in green as well to the user.
+- The user can only chose the next button or click outside the game-window and another pop-up will appear.
+
+#### Game Pause Section
+![Game Pause Section](docs/features/quiz-game-pause.png)
+- When playing the game and clicking outside the game window a pop-up will appear giving the user the two options to either keep playing or starting the game new. The user has hence always the chance to end the quiz whenever they like.
+- Starting a new game will redirect the user to the beginning quiz page and they can choose again which quiz they want to start.
+- Having this Pause Window open will pause the timer as well and resume when selecting the according button.
+
+#### End of Game Section
+![End of Game Section](docs/features/quiz-end-of-game-feature.png)
+- After going through all questions when selection the last next button an end of game pop-up will appear.
+- This tells the user that the quiz is finished, their name and their final score.
+- The user can then choose whether they would play a quiz again or wanting to add their score to the leaderboard. The first option will redirect the user at the beginning of the quiz page and the second will redirect the user to the landing page where they can choose to see the leaderboard with their score.
+
 ### 404 Page
+![404 Page](docs/features/404-feature.png)
+
 ### Future Features
 - good Database for scoreboard
 ## TESTING
