@@ -1,7 +1,7 @@
 /* Google font import */
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Limelight&display=swap');
 
-/* astric selector to remove default styles */
+/* asterisk selector to remove default styles */
 * {
     margin: 0;
     padding: 0;
@@ -313,7 +313,7 @@ th {
     gap: 8px;
 }
 
-/* next button to be styled and centered */
+/* next button to be styled and centred */
 #container-next{
     display: flex;
     justify-content: center;

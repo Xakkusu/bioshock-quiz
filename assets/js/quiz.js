@@ -80,7 +80,7 @@ window.onclick = function(event) {
 
 // used https://www.youtube.com/watch?v=PBcqGxrr9g8&t=14s to get to know the basic structure
 // of how to implement content for questions and answers of a quiz in Javascript
-// and load it to the website, then configurated it
+// and load it to the website, then configured it
 
 /**
  * setting up the game
@@ -139,7 +139,7 @@ function runGame () {
         button.classList.add("in-game-btn");
         // add created answer button
         answerOption.appendChild(button);
-        // checks if the quesitons-object's answer has a "correct" key-value pair and add it to dataset of button
+        // checks if the questions-object's answer has a "correct" key-value pair and add it to dataset of button
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
@@ -194,7 +194,7 @@ function checkAnswer(userAnswer) {
 }
 
 /**
- * increase value of scorw based on the answer chosen by the user and whether it's correct
+ * increase value of score based on the answer chosen by the user and whether it's correct
  */
 function incrementScore (userAnswer) {
     const chosenAnswer = userAnswer.target;
@@ -231,7 +231,7 @@ function nextQuestion(questionAsked) {
             runGame();
         }
     } else {
-        // is double since it created buggs when testing the game
+        // is double since it created bugs when testing the game
         modal.style.display = "none";
         endOfGameContainer.style.display = "flex";
         endOfGameContainer.style.justifyContent = "center";
