@@ -215,10 +215,6 @@ All pages have the following in common:
 ![Input field and Let's play Button focused](docs/features/name-input-focus-feature.png)
 - When focused the input field's border will change color so the user will know better that they can enter a name now.
 
-![Message after entering the name](docs/features/alert-start-feature.png)
-- After entering a name and submitting it via the button a message appears: "Hi XY let the game begin".
-- This is done only via button because if the user will be on his mobile device entering their name via the enter key, I did not want more things than necessary on a smaller screen so they will be directly directed to the quiz page.
-
 #### How to Play - Pop-Up
 ![How to Play Pop-Up field](docs/features/how-to-play-feature.png)
 - If the user selects the "How to Play?" button an instruction-section will appear.
@@ -474,9 +470,8 @@ The website was successfully tested on the following browsers:
 - [GitHub](https://GitHub.com/) - Used for version control and hosting.
 - [Gitpod](https://gitpod.io/) - IDE to develop the website.
 - [Google Fonts](https://fonts.google.com/) - Used to import  fonts used on website.
-- [FontAwesome](https://fontawesome.com/) - Used for footer's and navbar's icon.
 - [Google Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)- Used for troubleshooting, debugging, inspecting page's elements, testing responsiveness and styling elements.
-- [Favicon.cc](https://www.favicon.cc/) - Used for website's favicon.
+- [Iconduck](https://iconduck.com/icons/164196/games-bioshock) - Used for website's favicon.
 - [Coolors](https://coolors.co/) - Used to create color palette.
 - [Google Chrome's Lighthouse](https://developers.google.com/web/tools/lighthouse) - Used to test performance and accessibility.
 - [Wave](https://wave.webaim.org/) Used to test accessibility.
@@ -485,6 +480,7 @@ The website was successfully tested on the following browsers:
 - [JSHint](https://jshint.com/) Used to test all Javascript code.
 - [Am I Responsive](https://ui.dev/amiresponsive) Used to test responsiveness.
 - [Responsinator](http://www.responsinator.com/) Used to verify responsiveness especially usage for mobile devices.
+- Code Institute's Gitpod Template to generate IDE workspace.
 
 ## DEPLOYMENT
 The steps to deploy this project using GitHub pages were the following:
@@ -517,5 +513,34 @@ Fork the repository:
 
 ## CREDITS
 ### Media
+As little different images as possible were chosen for the website to not overstimulate the user while taking the quiz. The following images were gratefully used:
+- [Background Image](https://www.wallpaperflare.com/bioshock-columbia-video-games-tower-wallpaper-ursfm) - Wallpapaerflare
+- [Logo Image](https://de.wikipedia.org/wiki/Datei:Bioshock_logo_2.svg) - Wikipedia
+- [Favicon Image](https://iconduck.com/icons/164196/games-bioshock) - Iconduck
+- [Border Image](https://imgbin.com/png/Jdg6XMxa/art-deco-png) - IMGBIN
+
 ### Resources
+- Tutorials from Code Institute's lessons that we learned in the course of our diploma-education used to understand the basic concepts of JavaScript. 
+
+- [Stack Overflow](https://stackoverflow.co/)
+
+- [MDN](https://developer.mozilla.org/en-US/)
+
+- [W3Schools](https://www.w3schools.com/)
+
+- To understand the use of modals/pop-ups when clicking a certain element I relied on the material from [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) and this [Youtube Video by Florin Pop](https://www.youtube.com/watch?v=XH5OW46yO8I). Both explained the whole concept and code behind it very well. The according sections in my code where these things were relied on are also marked with a comment. 
+
+-  To understand the general use and structure of a quiz game I relied on the conten of the following [Youtube video by GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=14s). Especially on how to implement the content for the questions and answers the code as well as the explanation helped a lot. The according sections in my code where these things were relied on are also marked with a comment.
+
+- To understand the the Fisher-Yates Shuffle to shuffle my annwers I relied on the material from [Medium written by Khaledhassan](https://medium.com/@khaledhassan45/how-to-shuffle-an-array-in-javascript-6ca30d53f772). As there were mainy sources to choose from his article described it in a effective understandable way. The according sections in my code where these things were relied on are also marked with a comment. 
+
+- To understand the use the concept of a timer I relied on the material from [JavaScript.Info](https://javascript.info/settimeout-setinterval), [SheCodes](https://www.shecodes.io/athena/52336-how-to-create-a-countdown-timer-in-javascript) and this [Youtube Video by CodeSTACKr](https://www.youtube.com/watch?v=JRevaOwNKTI). Compared to other sources I could easily adapt their teachings to my cause. The according sections in my code where these things were relied on are also marked with a comment.
+
+- To understand the use the concept of a progress bar for my countdown bar I relied on the material from [W3Schools](https://www.w3schools.com/howto/howto_js_progressbar.asp). It explained the whole concept and code behind it very well. The according sections in my code where these things were relied on are also marked with a comment.
+
+- To understand the use the concept of border images I relied on the following [Youtube Video by Kevin Powell](https://www.youtube.com/watch?v=ypstT5UfCsk). It allowed me to easily implement a border image. The according sections in my code where these things were relied on are also marked with a comment.
+
+
 ## ACKNOWLEDGEMENTS
+- My mentor Antonio for their guidance and support.
+- Code Institute for informative course material.

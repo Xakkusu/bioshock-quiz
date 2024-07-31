@@ -26,7 +26,7 @@ let questionsAsked = 0;
 let barCounter;
 
 
-//adaptation of https://www.w3schools.com/howto/howto_css_modals.asp
+//adaptation of https://www.w3schools.com/howto/howto_css_modals.asp & https://www.youtube.com/watch?v=XH5OW46yO8I 
 /**
  * make modal visible when clicking the according button
  */
