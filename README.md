@@ -1,12 +1,12 @@
-# Bioschok Quiz
+# Bioshok Quiz
 
-You think you know your game, then let's proof it!
+You think you know your game, then let's prove it!
 
-The Bioshock Quiz is a fun little game that quizzes the user about their Bioshock knowdledge. Hence this quiz is for people who played at least one game out of the series and want to test themselves on what they picked up from it. The goal is to answer as many questions correctly as possible. 
+The Bioshock Quiz is a fun little game that quizzes the user about their Bioshock knowledge. Hence this quiz is for people who played at least one game out of the series and want to test themselves on what they picked up from it. The goal is to answer as many questions correctly as possible. 
 
-The Bioshock games have captivated millions of players all around the world. Yet they are dried out of new content. What better way is there to spend the time waiting for new game, than to refresh everything you know about the series and proof that you are worthy for new content. 
+The Bioshock games have captivated millions of players all around the world. Yet they are dried out of new content. What better way is there to spend the time waiting for a new game, than to refresh everything you know about the series and prove that you are worthy of new content. 
 
-As many people that have become tired of waiting for Judas or a new Bioshock games and replaying the old games yearly, I wanted to pay my respect to my favourite video game (Bioshock II) and its series. This quiz is also a fun thing to use when spending time with friends, from which everyone thinks they know the most about this game.
+As many people have become tired of waiting for Judas or a new Bioshock games and replaying the old games yearly, I wanted to pay my respect to my favourite video game (Bioshock II) and its series. This quiz is also a fun thing to use when spending time with friends, from which everyone thinks they know the most about this game.
 
 Interested? Then check it out here: [Bioshock Quiz](https://xakkusu.github.io/bioshock-quiz/index.html)
 
@@ -45,26 +45,29 @@ Interested? Then check it out here: [Bioshock Quiz](https://xakkusu.github.io/bi
     - [Media](#media)
     - [Resources](#resources)
 - [ACKNOWLEDGEMENTS](#acknowledgements)
+
+
 ## SITE OWNER GOALS
 - to provide the user with a fun short quiz mainly for Bioshock/gaming fans with increasingly more difficult questions
-- to provide the user the opportunity to test oneself on game knowdledge depending on the different Bioshock games (I-III)
-- to provide the user with a website with a familiar syling and theme of the games
+- to provide the user the opportunity to test oneself on game knowledge depending on the different Bioshock games (I-III)
+- to provide the user with a website with a familiar styling and theme of the games
 - to provide the user with the ability to gain more knowledge in case they didn't achieve the score they wanted
+
 
 ## USER EXPERIENCE (UX)
 #### First Time User Goals
 - I want to take a Bioshock quiz to test my knowledge
 - I want to understand the website, its structure and how to take the quiz
 - I want the quiz to be easy to use and navigate
-- I want to take the quiz whenever, whereever
+- I want to take the quiz whenever, wherever
 - I want to take the test on whichever device
 
 #### Returning User Goals
-- I want to be able to choose between different types of quizes
+- I want to be able to choose between different types of quizzes
 - I want to be able to improve my knowledge of the Bioshock series
 
 #### Frequent User Goals
-- I want to be able to choose between different types of quizes
+- I want to be able to choose between different types of quizzes
 - I want to be able to improve my knowledge of the Bioshock series
 - I want to be able to see my score of the quiz outside of taking the quiz
 
@@ -101,22 +104,23 @@ Quiz Page:
 
 </details>
 
+
 ## FINAL DESIGN
 ### Imagery
-The imagery as well as the colour scheme were chosen to be as in synch with Bishock's main theme, especially menu looks, as possible. This is of great importance so the user will quickly associate its looks and design with the common themes in the game. This was done to be in line with all three games, however since two of the three games have a greatly different tone than Bioshock II the former dominated the most decisions.
-The Background image was chosen to represent all three games. From the underwater world to the city in the clouds everything should be included for the main look  so the theme is easy to conntect with the games and is credited below.
-An Artdeco style for the main content boxes were chosen to be in line with Bioshock I and II Artdeco styling of its in-game-world and its menu styling.
+The imagery as well as the colour scheme were chosen to be as in sync with Bishock's main theme, especially menu looks, as possible. This is of great importance so the user will quickly associate its looks and design with the common themes in the game. This was done to be in line with all three games, however since two of the three games have a greatly different tone than Bioshock II the former dominated the most decisions.
+The Background image was chosen to represent all three games. From the underwater world to the city in the clouds everything should be included for the main look  so the theme is easy to connect  with the games and is credited below.
+An Art Deco style for the main content boxes were chosen to be in line with Bioshock I and II Art Deco styling of its in-game-world and its menu styling.
 
 ### Color Scheme
 ![Bioshock Quiz Color Palette](docs/readme-images/bioshock-color-scheme.png)
-The main colors consist out of darker green colours as well es brighter gold and silver colors for highlights. Other minor colors were mainly used for gradient styling of buttons and the countdown bar. All colors are in line with the colors of the games so the user will be familiar with the color palette and connect the quiz to the games just by the look of it. The only colors of this scheme that stand out are the red and green colors chosen for wrong and right answers in the quiz. However, as brighter colours in Bioshock Infinite are in pastel tones I chose a pastel tones for these two colors as well to again stay in line of the games colour scheme.
+The main colors consist of darker green colours as well as brighter gold and silver colors for highlights. Other minor colors were mainly used for gradient styling of buttons and the countdown bar. All colors are in line with the colors of the games so the user will be familiar with the color palette and connect the quiz to the games just by the look of it. The only colors of this scheme that stand out are the red and green colors chosen for wrong and right answers in the quiz. However, as brighter colours in Bioshock Infinite are in pastel tones I chose pastel tones for these two colors as well to again stay in line with the games' colour scheme.
 
 The color palette was created by using the [coolors](https://coolors.co/) website.
 
 ### Typography
 [Google Fonts](https://fonts.google.com/) was used for the following fonts:
 - ![Limelight font image](docs/readme-images/limelight-font.png) 
-[Limelight](https://fonts.google.com/specimen/Limelight?query=Limelight) was chosen for all the headings to set them apart from the other content. The font was chosen as it closely resembles some fonts used in the games, therefore it stays in line of the game's styling.
+[Limelight](https://fonts.google.com/specimen/Limelight?query=Limelight) was chosen for all the headings to set them apart from the other content. The font was chosen as it closely resembles some fonts used in the games, therefore it stays in line with the game's styling.
 - ![Didact Gothic font image](docs/readme-images/didact-gothic-font.png) 
 [Didact Gothic](https://fonts.google.com/specimen/Didact+Gothic?query=Didact+Gothic) was used for all the other text elements as it is easy to read and still resembles some fonts used in the Bioshock games.
 - Sans Serif was chosen as a backup font, in case for any reason the main font isn't being imported into the site correctly.
@@ -126,7 +130,7 @@ Images and more information for these effects are given below in the [Features](
 #### Shadows
 All elements that are shown in content boxes have a shadow to differentiate them either from the background image or from its content part that lay below it (e.g.: when clicking outside the game box while playing it).
 #### Buttons Hover Effect
-On larger screens when placing the mouse above any kind of button a hover-effect will appear. The shadow will change its opacity and color to a brighter gold to make it stand out. The cursor will become a pointer as well, unless it its in the quiz section and an answer has already been chosen.
+On larger screens when placing the mouse above any kind of button a hover-effect will appear. The shadow will change its opacity and color to a brighter gold to make it stand out. The cursor will become a pointer as well, unless it is in the quiz section and an answer has already been chosen.
 #### Answer Buttons Wrong/Right
 When the user chose an answer the right answer will change colors to green, the wrong to a red both with a silver font color to easily indicate which is wrong and which would have been correct. 
 #### Next Button
@@ -224,32 +228,32 @@ All pages have the following in common:
 #### Leaderboard - Pop-Up 
 ![Leaderboard field](docs/features/leaderboard-feature.png)
 - If the user selects the "Leaderboard" button an leaderboard-section will appear.
-- The user will see either an empty leaderboard or if the played before the will see their name and if the back then dedcided to save the score the score will also be shown.
+- The user will see either an empty leaderboard or if they played before they will see their name and if the user then decided to save the score the score will also be shown.
 - The user can select the "return"-button anytime they like to return to the landing page. The user could also click on the greyed out part outside of the section to go back to the landing page.
 
 
 #### Need more knowledge Button 
 ![Button to an external website](docs/features/knowledge-feature.png)
-- Of the user selects the "Need more knowldge button" they will be transfered to the [Bioshock Wiki](https://bioshock.fandom.com/wiki/BioShock_Wiki) in an external tab.
+- If the user selects the "Need more knowledge button" they will be transferred to the [Bioshock Wiki](https://bioshock.fandom.com/wiki/BioShock_Wiki) in an external tab.
 - Here they can look up whatever they think they lack knowledge in.
 
 ### Quiz Page
 ![Quiz main content](docs/features/quiz-feature.png)
 - The quiz page has a nearly identical design to the index page, so the user should already be familiar with how it works.
-- The section is made up out of the Logo and 4 buttons that are selectable by the user. When chosing a button a pop-up with the according quiz will appear.
-- The whole section is responsive and will adapt according to screen size. On smaller smartphones and smaller tabletes the buttons will be stacked on top of each other. When using a larger smartphone horizontally or a larger desktob screen the buttons will appear next to one another in two rows.
+- The section is made up out of the Logo and 4 buttons that are selectable by the user. When choosing a button a pop-up with the according quiz will appear.
+- The whole section is responsive and will adapt according to screen size. On smaller smartphones and smaller tabletes the buttons will be stacked on top of each other. When using a larger smartphone horizontally or a larger desktop screen the buttons will appear next to one another in two rows.
 
 #### Game Section Pop-Up
 ![Quiz main content](docs/features/quiz-pop-up-feature.png)
-- This section consists out of the quiz itself and only pops up when a game type has been selected.
-- It is made up out of the question, a countdown-bar, a timer, answer-buttons and if certain conditions are fullfilled a score and a next-button.
+- This section consists of the quiz itself and only pops up when a game type has been selected.
+- It is made up out of the question, a countdown-bar, a timer, answer-buttons and if certain conditions are fulfilled a score and a next-button.
 
 ![Quiz main content mobile](docs/features/quiz-pop-up-mobile-feature.png)
 - The whole section is responsive and will adapt according to screen size. On smaller smartphones and smaller tabletes the answer-buttons will be stacked on top of each other.
 
 #### Timer, Timebar, Questions Left, Score
 ![Gama Data Section with no score](docs/features/quiz-game-data-no-score-feature.png)
-- A Timer that counts down from 20 seconds is shown within a countdown bar which also runs down. This indicates to the user in a simple visual way how much time they have left to anser a certain question.
+- A Timer that counts down from 20 seconds is shown within a countdown bar which also runs down. This indicates to the user in a simple visual way how much time they have left to answer a certain question.
 - A counter how many questions are left to be asked is given as well.
 - When the user has not answered a question correctly only this information is given in this part.
 
@@ -259,10 +263,10 @@ All pages have the following in common:
 
 #### Answers
 ![Answer buttons after user chose one](docs/features/quiz-answer-feature.png)
-- The buttons have the same hover-effect as every other button, however they are styled in different colors to set themselves apart from the others. This is done to visually indicate to the user that this part of the website is different than the other parts as it is the quiz itself.
+- The buttons have the same hover-effect as every other button, however they are styled in different colors to set themselves apart from the others. This is done to visually indicate to the user that this part of the website is different from the other parts as it is the quiz itself.
 - The answer's order is random through the Fisher–Yates shuffle.
-- After the user selected an answer the selected button will either turn green with a white font or it will turn red and the correct answer will turn green. 
-- This reveal of the correct and false answer is commonly done in quizes and other games to indicte to the user what they have done wrong or correct.
+- After the user selects an answer the selected button will either turn green with a white font or it will turn red and the correct answer will turn green. 
+- This reveal of the correct and false answer is commonly done in quizzes and other games to indicate to the user what they have done wrong or correct.
 - The whole section is responsive and will adapt according to screen size. On smaller smartphones and smaller tabletes the answer-buttons will be stacked on top of each other.
 
 ![Answer buttons no-drop](docs/features/non-drop-button.gif)
@@ -272,9 +276,9 @@ All pages have the following in common:
 ![Answers no next button](docs/features/quiz-no-next-btn-feature.png)
 ![Answers with next button](docs/features/quiz-next-btn-feature.png)
 - When the user has not selected an answer yet there will be no next button.
-- As soon as the user clicked on an answer-button the next button will appear below the answers. This way the user can only go to the next question after they selected an answer.
+- As soon as the user clicks on an answer-button the next button will appear below the answers. This way the user can only go to the next question after they selected an answer.
 - If the time is up the next button will appear as well as the correct-answer will be shown in green as well to the user.
-- The user can only chose the next button or click outside the game-window and another pop-up will appear.
+- The user can only choose the next button or click outside the game-window and another pop-up will appear.
 
 #### Game Pause Section
 ![Game Pause Section](docs/features/quiz-game-pause.png)
@@ -284,16 +288,18 @@ All pages have the following in common:
 
 #### End of Game Section
 ![End of Game Section](docs/features/quiz-end-of-game-feature.png)
-- After going through all questions when selection the last next button an end of game pop-up will appear.
+- After going through all questions when selecting the last next button an end of game pop-up will appear.
 - This tells the user that the quiz is finished, their name and their final score.
-- The user can then choose whether they would play a quiz again or wanting to add their score to the leaderboard. The first option will redirect the user at the beginning of the quiz page and the second will redirect the user to the landing page where they can choose to see the leaderboard with their score.
+- The user can then choose whether they would play a quiz again or want to add their score to the leaderboard. The first option will redirect the user at the beginning of the quiz page and the second will redirect the user to the landing page where they can choose to see the leaderboard with their score.
 
 ### 404 Page
 ![404 Page](docs/features/404-feature.png)
 - When an error occurs or a wrong input is given to the url the 404-page will shop up with the information on how to be redirected to the landing page.
 
 ### Future Features
-- Once I gain the knowledge I would like to add the ability to add various game scores to the leaderboard which will be ranked according from highest to lowest score. Yet as I do not know anything about databases and necessary frameworks etc. I do not feel confident enough to just get the code from somewhere about this without being able to 1. understand it completely, 2. do it on my own and 3. it is out of the scope for this project to implement such things. However in the near future this should be an easy task!
+- Once I gain the knowledge I would like to add the ability to add various game scores to the leaderboard which will be ranked according from highest to lowest score. Yet, as I do not know anything about databases and necessary frameworks etc. I do not feel confident enough to just get the code from somewhere about this without being able to 1. understand it completely, 2. do it on my own and 3. it is out of the scope for this project to implement such things. However in the near future this should be an easy task!
+- I played with the thought of getting rid of the next button feature and automatically switching to the next question after some time has passed after the answer has been chosen/revealed. However, as I have a bias against this I discussed this thought after the first few test-users went through the quiz with them. My own bias is that I think accessibility wise it makes more sense to use a button as going to the next question might go too fast for some people, or one can control when to start a new question on their own since life gets in the way of a fun little game sometimes. Moreover, various of my test users mentioned in a talk about the website that they generally dislike when a game does too much for them especially when it comes to decisions they would like to choose themselves. I already implemented the time constraint via a timer during the questions, for all of these reasons I decided against this feature for now. Yet, I would like to keep the option open in case future users or I would want that.
+
 
 ## TESTING
 ### Accessibility
@@ -408,14 +414,14 @@ The website was successfully tested on the following browsers:
 #### First Time User Goals
 - I want to take a Bioshock quiz to test my knowledge
 
-    The quiz test the user's knowledge from simple questions up to questions that only die-hard fans can answer.
+    The quiz tests the user's knowledge from simple questions up to questions that only die-hard fans can answer.
 - I want to understand the website, its structure and how to take the quiz
 
-    Through the common structure found in various quiz games most users should be already familiar with the webiste's set up. However, through the "How to Play?" Content the whole process of the game is easily explained step by step.
-- I want the quiz to be easy to use and navigat
+    Through the common structure found in various quiz games most users should be already familiar with the website's set up. However, through the "How to Play?" Content the whole process of the game is easily explained step by step.
+- I want the quiz to be easy to use and navigate
 
-    All buttons, input field and text is written in large easy to understand fonts as well as simple langugae, as the website does not want the user to be overwhelmed when being tested about their knowledge. The user can return via return buttons or via clicking outside of pop-up windows which is explained in the How to Play section.
-- I want to take the quiz whenever, whereever.
+    All buttons, input fields and text are written in large, easy to understand fonts as well as simple language, as the website does not want the user to be overwhelmed when being tested about their knowledge. The user can return via return buttons or via clicking outside of pop-up windows which is explained in the How to Play section.
+- I want to take the quiz whenever, wherever.
 
     The user can play the game whenever they like on whichever device they like, as long as they have internet connection.
 - I want to take the test on whichever device
@@ -423,17 +429,17 @@ The website was successfully tested on the following browsers:
     The user can play the game whenever they like on whichever device they like, as long as they have internet connection.
 
 #### Returning User Goals
-- I want to be able to choose between different types of quizes
+- I want to be able to choose between different types of quizzes
 
-    The user can chose between quizes about Bioshock I to III or all of them however many times they want to.
+    The user can choose between quizzes about Bioshock I to III or all of them however many times they want to.
 - I want to be able to improve my knowledge of the Bioshock series
 
     If the user wants to learn more outside of the questions they can do so by choosing the "Need more knowledge?"-button on the landing page. They will be redirected to the Bioshock-Wiki where pretty much all important information about the games is stored.
 
 #### Frequent User Goals
-- I want to be able to choose between different types of quizes
+- I want to be able to choose between different types of quizzes
 
-    The user can chose between quizes about Bioshock I to III or all of them however many times they want to.
+    The user can choose between quizzes about Bioshock I to III or all of them however many times they want to.
 - I want to be able to improve my knowledge of the Bioshock series
 
     If the user wants to learn more outside of the questions they can do so by choosing the "Need more knowledge?"-button on the landing page. They will be redirected to the Bioshock-Wiki where pretty much all important information about the games is stored.
@@ -448,17 +454,19 @@ The website was successfully tested on the following browsers:
 
 2.  The questions after some time jumped from 1 to 2 to 4 to 8 to 15. 
     - put in various alerts for the questionsAsked variable to see its current value in the console while debugging
-    - found out while incrementing it there was a bug, as well as giving the above mentioned event listener an exteral function through which I could better test where the problem was
+    - found out while incrementing it there was a bug, as well as giving the above mentioned event listener an external function through which I could better test where the problem was
     - this new function I gave the questionAsked variable as parameters and later as an argument and after I debugged this function I deleted all relevant alerts
 
 
-3. After deploying the finished quiz, while playing the game the timer, score and questions left would react to the spacebar and enter key, so the would: timer - restart, questions left - substract random numbers between 1-5 and go into the negative & score - add random numbers between 1-5
-    - added eventlisteners for both keys in runGame()-funtction to prevent their default behaviour (as I could not find out what else they were doing I thought preventDefault() would be the safest option)
+3. After deploying the finished quiz, while playing the game the timer, score and questions left would react to the spacebar and enter key, so the would: timer - restart, questions left - subtract random numbers between 1-5 and go into the negative & score - add random numbers between 1-5
+    - added event listeners for both keys in runGame()-function to prevent their default behaviour (as I could not find out what else they were doing I thought preventDefault() would be the safest option)
     - for spacebar I had to add various event listener events as it still would happen on different browsers/devices, so I took all names for spacebar I was able to find, so this problem could still occur if a browser uses another definition
- 
 
 
 ### Known Bugs
+- When pausing the game while already having answered a question the timer will still continue running down when returning to the game even though the answer has been selected. This does not change anything on any other variable, however I was not able to fix this yet with my current knowledge. At the same time this case should generally not occur as all the test users I had either paused before giving an answer or when pausing after an answer they returned to the start the game question. However, I would like to be able to fix this once I acquire the know-how.
+
+
 ## TECHNOLOGIES USED
 ### Languages
 - HTML
@@ -469,10 +477,10 @@ The website was successfully tested on the following browsers:
 - [Balsamiq](https://balsamiq.com/wireframes/)- Used to create wireframes.
 - [GitHub](https://GitHub.com/) - Used for version control and hosting.
 - [Gitpod](https://gitpod.io/) - IDE to develop the website.
-- [Google Fonts](https://fonts.google.com/) - Used to import  fonts used on website.
+- [Google Fonts](https://fonts.google.com/) - Used to import  fonts used on the website.
 - [Google Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)- Used for troubleshooting, debugging, inspecting page's elements, testing responsiveness and styling elements.
 - [Iconduck](https://iconduck.com/icons/164196/games-bioshock) - Used for website's favicon.
-- [Coolors](https://coolors.co/) - Used to create color palette.
+- [Coolors](https://coolors.co/) - Used to create a color palette.
 - [Google Chrome's Lighthouse](https://developers.google.com/web/tools/lighthouse) - Used to test performance and accessibility.
 - [Wave](https://wave.webaim.org/) Used to test accessibility.
 - [W3C HTML Markup Validator](https://validator.w3.org/) Used to validate HTML code.
@@ -481,6 +489,7 @@ The website was successfully tested on the following browsers:
 - [Am I Responsive](https://ui.dev/amiresponsive) Used to test responsiveness.
 - [Responsinator](http://www.responsinator.com/) Used to verify responsiveness especially usage for mobile devices.
 - Code Institute's Gitpod Template to generate IDE workspace.
+
 
 ## DEPLOYMENT
 The steps to deploy this project using GitHub pages were the following:
@@ -511,6 +520,7 @@ Fork the repository:
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 6. A clone of the repository will now be created on your machine.
 
+
 ## CREDITS
 ### Media
 As little different images as possible were chosen for the website to not overstimulate the user while taking the quiz. The following images were gratefully used:
@@ -530,13 +540,13 @@ As little different images as possible were chosen for the website to not overst
 
 - To understand the use of modals/pop-ups when clicking a certain element I relied on the material from [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) and this [Youtube Video by Florin Pop](https://www.youtube.com/watch?v=XH5OW46yO8I). Both explained the whole concept and code behind it very well. The according sections in my code where these things were relied on are also marked with a comment. 
 
--  To understand the general use and structure of a quiz game I relied on the conten of the following [Youtube video by GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=14s). Especially on how to implement the content for the questions and answers the code as well as the explanation helped a lot. The according sections in my code where these things were relied on are also marked with a comment.
+-  To understand the general use and structure of a quiz game I relied on the content of the following [Youtube video by GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=14s). Especially on how to implement the content for the questions and answers the code as well as the explanation helped a lot. The according sections in my code where these things were relied on are also marked with a comment.
 
-- To understand the the Fisher-Yates Shuffle to shuffle my annwers I relied on the material from [Medium written by Khaledhassan](https://medium.com/@khaledhassan45/how-to-shuffle-an-array-in-javascript-6ca30d53f772). As there were mainy sources to choose from his article described it in a effective understandable way. The according sections in my code where these things were relied on are also marked with a comment. 
+- To understand the Fisher-Yates Shuffle to shuffle my answers I relied on the material from [Medium written by Khaledhassan](https://medium.com/@khaledhassan45/how-to-shuffle-an-array-in-javascript-6ca30d53f772). As there were many sources to choose from, his article described it in an effective understandable way. The according sections in my code where these things were relied on are also marked with a comment. 
 
-- To understand the use the concept of a timer I relied on the material from [JavaScript.Info](https://javascript.info/settimeout-setinterval), [SheCodes](https://www.shecodes.io/athena/52336-how-to-create-a-countdown-timer-in-javascript) and this [Youtube Video by CodeSTACKr](https://www.youtube.com/watch?v=JRevaOwNKTI). Compared to other sources I could easily adapt their teachings to my cause. The according sections in my code where these things were relied on are also marked with a comment.
+- To understand the concept of a timer I relied on the material from [JavaScript.Info](https://javascript.info/settimeout-setinterval), [SheCodes](https://www.shecodes.io/athena/52336-how-to-create-a-countdown-timer-in-javascript) and this [Youtube Video by CodeSTACKr](https://www.youtube.com/watch?v=JRevaOwNKTI). Compared to other sources I could easily adapt their teachings to my cause. The according sections in my code where these things were relied on are also marked with a comment.
 
-- To understand the use the concept of a progress bar for my countdown bar I relied on the material from [W3Schools](https://www.w3schools.com/howto/howto_js_progressbar.asp). It explained the whole concept and code behind it very well. The according sections in my code where these things were relied on are also marked with a comment.
+- To understand the concept of a progress bar for my countdown bar I relied on the material from [W3Schools](https://www.w3schools.com/howto/howto_js_progressbar.asp). It explained the whole concept and code behind it very well. The according sections in my code where these things were relied on are also marked with a comment.
 
 - To understand the use the concept of border images I relied on the following [Youtube Video by Kevin Powell](https://www.youtube.com/watch?v=ypstT5UfCsk). It allowed me to easily implement a border image. The according sections in my code where these things were relied on are also marked with a comment.
 
