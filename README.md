@@ -399,7 +399,7 @@ The website was successfully tested on the following browsers:
 - Microsoft Edge
 
 ### Device Testing
-- This website was viewed and tested on various devices such as smartphones (Iphone X, Huawei P40 Pro+), laptops and desktops to guarantee that it is responsive for several screen sizes. Full successful testing was performed on all of the devices.
+- This website was viewed and tested on various devices such as smartphones (Iphone X, Samsung Galaxy S20, Iphone 13, Huawei P40 Pro+), laptops and desktops to guarantee that it is responsive for several screen sizes. Full successful testing was performed on all of the devices.
 
 
 - The following websites, besides google dev tools, were used to check responsiveness:
