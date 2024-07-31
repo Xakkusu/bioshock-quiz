@@ -335,13 +335,6 @@ Quiz:
 
 <img src="docs/testing/wave-index.png" alt="Wave index rating" width="40%">
 
-<details>
-<summary>Error</summary>
-Error shows a missing form label, even though form label is there it is just hidden as the placeholder explains what should be done with the input element.
-
-<img src="docs/testing/wave-index-error.png" alt="code with form label">
-</details>
-
 ##### Quiz Page
 
 <img src="docs/testing/wave-quiz.png" alt="Wave quiz rating" width="40%">
