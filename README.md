@@ -297,7 +297,6 @@ All pages have the following in common:
 - When an error occurs or a wrong input is given to the url the 404-page will show up with the information on how to be redirected to the landing page.
 
 ### Future Features
-- Once I gain the knowledge I would like to add the ability to add various game scores to the leaderboard which will be ranked according from highest to lowest score. Yet, as I do not know anything about databases and necessary frameworks etc. I do not feel confident enough to just get the code from somewhere about this without being able to 1. understand it completely, 2. do it on my own and 3. it is out of the scope for this project to implement such things. However in the near future this should be an easy task!
 - I played with the thought of getting rid of the next button feature and automatically switching to the next question after some time has passed after the answer has been chosen/revealed. However, as I have a bias against this I discussed this thought after the first few test-users went through the quiz with them. My own bias is that I think accessibility wise it makes more sense to use a button as going to the next question might go too fast for some people, or one can control when to start a new question on their own since life gets in the way of a fun little game sometimes. Moreover, various of my test users mentioned in a talk about the website that they generally dislike when a game does too much for them especially when it comes to decisions they would like to choose themselves. I already implemented the time constraint via a timer during the questions, for all of these reasons I decided against this feature for now. Yet, I would like to keep the option open in case future users or I would want that.
 
 
@@ -542,6 +541,8 @@ As little different images as possible were chosen for the website to not overst
 - To understand the concept of a progress bar for my countdown bar I relied on the material from [W3Schools](https://www.w3schools.com/howto/howto_js_progressbar.asp). It explained the whole concept and code behind it very well. The according sections in my code where these things were relied on are also marked with a comment.
 
 - To understand the use the concept of border images I relied on the following [Youtube Video by Kevin Powell](https://www.youtube.com/watch?v=ypstT5UfCsk). It allowed me to easily implement a border image. The according sections in my code where these things were relied on are also marked with a comment.
+
+- To understand the use the concept of localStorage being displayed in a leaderboard according to the score I relied on the following [Youtube Playlist by FloridaJS](https://www.youtube.com/playlist?list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF). Especially video 8 & 9 allowed me to display various scores and rank them after the quiz is done. The according sections in my code where these things were relied on are also marked with a comment.
 
 
 ## ACKNOWLEDGEMENTS
