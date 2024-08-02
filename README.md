@@ -226,9 +226,10 @@ All pages have the following in common:
 - The user can select the "return"-button anytime they like to return to the landing page. The user could also click on the greyed out part outside of the section to go back to the landing page.
 
 #### Leaderboard - Pop-Up 
+![Leaderboard field](docs/features/leaderboard-empty-feature.png)
 ![Leaderboard field](docs/features/leaderboard-feature.png)
 - If the user selects the "Leaderboard" button an leaderboard-section will appear.
-- The user will see either an empty leaderboard or if they played before they will see their name and if the user then decided to save the score the score will also be shown.
+- The user will see either an empty leaderboard or if they played before they will see their name and score. The top 5 names + scores are displayed in the list.
 - The user can select the "return"-button anytime they like to return to the landing page. The user could also click on the greyed out part outside of the section to go back to the landing page.
 
 

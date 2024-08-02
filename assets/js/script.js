@@ -1,7 +1,5 @@
 let namePlayer = document.getElementById("name-of-player");
 const letsPlayBtn = document.getElementById("quiz-button");
-const leaderboardName = document.getElementsByClassName("namePlayer");
-const leaderBoardGame = document.getElementsByClassName("scorePlayer");
 const leaderboardList = document.getElementById("ul-leaderboard");
 const leaderboardScore = JSON.parse(localStorage.getItem("leaderboardScore")) || [];
 
