@@ -2,6 +2,8 @@ let namePlayer = document.getElementById("name-of-player");
 const letsPlayBtn = document.getElementById("quiz-button");
 const leaderboardName = document.getElementsByClassName("namePlayer");
 const leaderBoardGame = document.getElementsByClassName("scorePlayer");
+const leaderboardList = document.getElementById("ul-leaderboard");
+const leaderboardScore = JSON.parse(localStorage.getItem("leaderboardScore")) || [];
 
 //adaptation of https://www.w3schools.com/howto/howto_css_modals.asp & https://www.youtube.com/watch?v=XH5OW46yO8I
 // to create modals when clicking buttons
@@ -64,7 +66,10 @@ letsPlayBtn.addEventListener("click", function(event){
   }
 });
 
+// how to implement leaderboard data to the localStorage and retrieve it was done by the help of this playlist: https://www.youtube.com/playlist?list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF
+// mainly by video 8 & 9
 // add score and name to leaderboard after the game is finished
 // score will only be added if the user decides so in the quiz.js
-leaderboardName[0].innerHTML = localStorage.getItem("userName");
-leaderBoardGame[0].innerHTML = localStorage.getItem("userScore");
+leaderboardList.innerHTML = leaderboardScore.map( leaderboardScore  => {
+  return `<li class="high-score">${leaderboardScore.name} Score: ${leaderboardScore.score}</li>`
+}).join("");

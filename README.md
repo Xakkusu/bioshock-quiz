@@ -294,7 +294,7 @@ All pages have the following in common:
 
 ### 404 Page
 ![404 Page](docs/features/404-feature.png)
-- When an error occurs or a wrong input is given to the url the 404-page will shop up with the information on how to be redirected to the landing page.
+- When an error occurs or a wrong input is given to the url the 404-page will show up with the information on how to be redirected to the landing page.
 
 ### Future Features
 - Once I gain the knowledge I would like to add the ability to add various game scores to the leaderboard which will be ranked according from highest to lowest score. Yet, as I do not know anything about databases and necessary frameworks etc. I do not feel confident enough to just get the code from somewhere about this without being able to 1. understand it completely, 2. do it on my own and 3. it is out of the scope for this project to implement such things. However in the near future this should be an easy task!

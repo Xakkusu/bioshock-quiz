@@ -10,6 +10,7 @@ const redoGameBtn = document.getElementById("redo-game-button");
 const restartGameBtn = document.getElementById("restart-game-btn");
 const goBackToGameBtn = document.getElementById("go-back-btn");
 const addToLeaderboardBtn =document.getElementById("add-to-leaderboard-btn");
+const leaderboardScore = JSON.parse(localStorage.getItem("leaderboardScore")) || [];
 let endOfGameContainer = document.getElementById("end-of-game");
 let finishSentence = document.getElementById("finish-sentence");
 let modal = document.getElementById("container-game-area");
@@ -163,6 +164,9 @@ function rebootGame() {
     }
 }
 
+
+// how to implement leaderboard data to the localStorage and retrieve it was done by the help of this playlist: https://www.youtube.com/playlist?list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF
+// mainly by video 8 & 9
 /**
  * check the answer based on answer the player chose/clicked
  */
@@ -204,6 +208,7 @@ function incrementScore (userAnswer) {
     containerScore.innerHTML= "Score: " + score;
 }
 
+
 /**
  * go to the next question based on which question has already been asked and either running game with data from next question or ending the game
  */
@@ -214,13 +219,23 @@ function nextQuestion(questionAsked) {
         endOfGameContainer.style.display = "flex";
         endOfGameContainer.style.justifyContent = "center";
         endOfGameContainer.style.alignItems = "center";
+        let nameOfPlayer = localStorage.getItem("userName");
         finishSentence.innerHTML = `Congrats, ${localStorage.getItem("userName")} you finished the quiz!\n
             Your score: ${score}`;
+
         //set value pair in local storage as true when game is finished
-        localStorage.setItem("finished", true);
         addToLeaderboardBtn.addEventListener("click", function() {
             endScore = score;
-            localStorage.setItem("userScore", endScore);
+            const point = {
+                score: endScore,
+                name: nameOfPlayer
+            };
+            leaderboardScore.push(point);
+            leaderboardScore.sort( (a,b) => b.score - a.score);
+            leaderboardScore.splice(5);
+            
+            localStorage.setItem("leaderboardScore", JSON.stringify(leaderboardScore));
+    
             window.location.replace("index.html");
         });
     } else if  (questionsAsked < questions.length){
@@ -236,13 +251,23 @@ function nextQuestion(questionAsked) {
         endOfGameContainer.style.display = "flex";
         endOfGameContainer.style.justifyContent = "center";
         endOfGameContainer.style.alignItems = "center";
+        let nameOfPlayer = localStorage.getItem("userName");
         finishSentence.innerHTML = `Congrats, ${localStorage.getItem("userName")} you finished the quiz!\n
             Your score: ${score}`;
         //set value pair in local storage as true when game is finished
-        localStorage.setItem("finished", true);
         addToLeaderboardBtn.addEventListener("click", function() {
             endScore = score;
-            localStorage.setItem("userScore", endScore);
+            
+            const point = {
+                score: endScore,
+                name: nameOfPlayer
+            };
+            leaderboardScore.push(point);
+            leaderboardScore.sort( (a,b) => b.score - a.score);
+            leaderboardScore.splice(5);
+            
+            localStorage.setItem("leaderboardScore", JSON.stringify(leaderboardScore));
+
             window.location.replace("index.html");
         });
     }
