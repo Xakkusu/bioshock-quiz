@@ -61,23 +61,6 @@ form {
     gap: 2px;
 }
 
-table {
-    width: 75%;
-    min-width: 270px;
-    padding: 10px;
-}
-
-th, td {
-    border: solid 1px black;
-    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
-    height: 30px;
-    padding-left: 10px;
-}
-
-th {
-    font-weight: 600;
-}
-
 .nameLeaderboard {
     width: 75%;
     text-align: left;
@@ -477,11 +460,6 @@ th {
         bottom: 5%;
     }
 
-    table {
-        width: 80%;
-        min-width: 500px;
-        max-width: 650px;
-    }
 
     /* make quiz buttons larger */
     .in-game-btn {
