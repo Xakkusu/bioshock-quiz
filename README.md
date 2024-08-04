@@ -543,7 +543,7 @@ As little different images as possible were chosen for the website to not overst
 
 - To understand the use the concept of border images I relied on the following [Youtube Video by Kevin Powell](https://www.youtube.com/watch?v=ypstT5UfCsk). It allowed me to easily implement a border image. The according sections in my code where these things were relied on are also marked with a comment.
 
-- To understand the use the concept of localStorage being displayed in a leaderboard according to the score I relied on the following [Youtube Playlist by FloridaJS](https://www.youtube.com/playlist?list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF). Especially video 8 & 9 allowed me to display various scores and rank them after the quiz is done. The according sections in my code where these things were relied on are also marked with a comment.
+- To understand the use the concept of localStorage being displayed in a leaderboard according to the score I relied on the following [Youtube Playlist by James Q Quick](https://www.youtube.com/playlist?list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF). Especially video 8 & 9 allowed me to display various scores and rank them after the quiz is done. The according sections in my code where these things were relied on are also marked with a comment.
 
 
 ## ACKNOWLEDGEMENTS

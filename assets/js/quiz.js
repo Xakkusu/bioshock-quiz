@@ -29,7 +29,7 @@ let barCounter;
 
 //adaptation of https://www.w3schools.com/howto/howto_css_modals.asp & https://www.youtube.com/watch?v=XH5OW46yO8I 
 /**
- * make modal visible when clicking the according button
+ * make modal visible when clicking the according button & loading questions into the game
  */
 for (let i = 0; i<btn.length; i++){
     btn[i].onclick = function() {
